@@ -6,6 +6,20 @@ body {
     background-color: #636262;
 }
 
+.alerts{
+    position: fixed;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #fff;
+    left: 15px;
+    bottom: 15px;
+    padding: 5px 15px;
+    background:#F82626;
+    border-radius: 7px;
+    opacity: .8;
+    z-index: 999;
+}
+
 .nav {
     background-color: #fff;
     color: #333;

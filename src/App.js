@@ -9,14 +9,17 @@ import {Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <>
-      <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/visit" element={<Visit/>}/>
-          <Route path="/events" element={<Events/>}/>
-          <Route path="/watch" element={<Watch/>}/>
-          <Route path="/give" element={<Give/>}/>
-        </Routes>
+        <Navbar/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/visit" element={<Visit/>}/>
+            <Route path="/events" element={<Events/>}/>
+            <Route path="/watch" element={<Watch/>}/>
+            <Route path="/give" element={<Give/>}/>
+          </Routes>
+        <div className='alerts'>
+          This website is under construction. Links and buttons might not work.
+      </div>
     </>
   );
 }
