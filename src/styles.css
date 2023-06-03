@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #636262;
+}
+
+.nav {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 0 1rem;
+}
+
+.site-title p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+.site-title img {
+    margin: 0.25rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav li.active {
+    background-color: inherit;
+    border-top: 5px solid #3C82D4;
+    color: #3C82D4;
+}
+
+.nav li:hover {
+    background-color: inherit;
+    border-top: 5px solid #3C82D4;
+    color: #3C82D4;
+}
+
+
+.buttons{
+    display:flex; 
+    flex-flow:row wrap; 
+    align-items:center; 
+    justify-content:center;
+    font: 600 14px 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+}
+
+.buttons a {
+    text-decoration: none;
+    outline: none;
+    min-width: 170px;
+    padding: 15px 15px;
+    margin: 20px 10px 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    background: #3C82D4;
+}
+
+.la{
+    justify-content: start;
+}
+
+.buttons.hover-dark a:hover {
+    background:#333;
+    color: #fff;
+}
+
+.buttons.hover-light a:hover {
+    background:#fff;
+    color: #3C82D4;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .nav ul {
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        padding: 1rem;
+        background-color: #919191;
+    }
+  
+    .nav.active ul {
+      display: flex; /* Show the navigation links when the nav is active */
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .nav-toggle {
+      display: flex; /* Show the nav toggle button */
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+    }
+  }

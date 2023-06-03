@@ -1,11 +1,23 @@
-import React from 'react';
-import './App.css';
+import Navbar from './Navbar';
+import Home from './pages/Home';
+import Visit from './pages/Visit';
+import Watch from './pages/Watch';
+import Events from './pages/Events';
+import Give from './pages/Give';
+import {Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      Hello COTA!
-    </div>
+    <>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/visit" element={<Visit/>}/>
+          <Route path="/events" element={<Events/>}/>
+          <Route path="/watch" element={<Watch/>}/>
+          <Route path="/give" element={<Give/>}/>
+        </Routes>
+    </>
   );
 }
 

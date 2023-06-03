@@ -1,0 +1,52 @@
+.section{
+    text-align: center;
+}
+
+.hero{
+    background-image: url('../../public/shared/img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.heroText{
+    font-size: 75px;
+    font-weight: bold;
+    color: white;
+}
+
+.btns{
+    display:flex; 
+    flex-flow:row wrap; 
+    align-items:center; 
+    justify-content:center;
+    font: 600 14px 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+}
+
+.btns a{
+    text-decoration: none;
+    outline: none;
+    min-width: 170px;
+    padding: 15px 15px;
+    margin: 20px 10px 0 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #252525;
+    text-align: center;
+    background: #FFF;
+}
+
+.btns a:hover{
+    color: #fff;
+    background: #3C82D4;
+}
+
+@media (max-width: 760px){
+    .heroText{
+        font-size: 55px;
+    }
+}
