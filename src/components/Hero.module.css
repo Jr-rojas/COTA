@@ -43,6 +43,9 @@
 .btns a:hover{
     color: #fff;
     background: #3C82D4;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease
 }
 
 @media (max-width: 760px){

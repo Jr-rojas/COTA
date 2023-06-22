@@ -2,13 +2,13 @@
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins/Poppins-Black.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+  font-style: 400;
 }
 
 @font-face {
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins/Poppins-Light.ttf') format('truetype');
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -16,7 +16,7 @@
   font-family: 'Poppins';
   src: url('../public/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
   font-weight: bold;
-  font-style: normal;
+  font-style: 700;
 }
 
 body {

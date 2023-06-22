@@ -27,10 +27,6 @@
     z-index:2;
 }
 
-.content{
-    position: relative;
-}
-
 .h1{
     font-size: 60px;
     line-height: 60px;
@@ -38,6 +34,7 @@
     margin-bottom: 20px;
     font-family: 'Poppins';
     font-weight: 700;
+    color: #ffffff;
 }
 
 .hr{
