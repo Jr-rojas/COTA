@@ -4,6 +4,7 @@ import Visit from './pages/Visit';
 import Watch from './pages/Watch';
 import Events from './pages/Events';
 import Give from './pages/Give';
+import Footer from './components/Footer';
 import {Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
             <Route path="/watch" element={<Watch/>}/>
             <Route path="/give" element={<Give/>}/>
           </Routes>
-        <div className='alerts'>
+          <Footer/>
+        {/* <div className='alerts'>
           This website is under construction. Links and buttons might not work.
-      </div>
+      </div> */}
     </>
   );
 }

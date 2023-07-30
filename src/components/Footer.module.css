@@ -1,0 +1,125 @@
+.section{
+    background-color: black;
+}
+
+.section2{
+    background-color: black;
+    border-top: 2px solid #717171;
+}
+
+.section2 div{
+    max-width: 1116px;
+    margin: 20px auto;
+}
+
+.section2 div h5{
+    margin: 10px;
+    padding-left: 25px;
+    font-size: 12px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    padding: 50px 0;
+    margin: 0 auto;
+    max-width: 1116px;
+}
+
+.content > :nth-child(1){
+    padding-left: 50px;
+}
+
+.content > :nth-child(2){
+    width: auto;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items:start;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+
+.container ul{
+    list-style: none;
+    columns: 2;
+    margin: 5px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.section a {
+    text-decoration: none;
+}
+
+.section a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.container ul li a:hover{
+    cursor: pointer;
+    color: #3C82D4;
+}
+
+
+h5 ~ li:hover{
+    cursor: pointer;
+    color: #3C82D4;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form label{
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.form span input[type="submit"]{
+    width: 40px;
+    height: 22px;
+    font-weight: 700;
+    color: aliceblue;
+    border-radius: 0;
+    border: 0;
+    background-color: #3C82D4;
+}
+
+.form span input[type="submit"]:hover{
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content > :nth-child(2){
+        border: 0;
+    }
+}

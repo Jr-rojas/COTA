@@ -137,7 +137,7 @@ export default function Home(){
                         <h1 className={styles.h1}>COTA Kids & Cota Youth</h1>
                         <hr className={styles.hr2}/>
                         <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className='buttons la hover-light'>
+                        <div className='buttons la hover-dark'>
                             <a href="/">Kids</a>
                             <a href="/">Youth</a>
                         </div>
