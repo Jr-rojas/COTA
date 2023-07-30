@@ -58,6 +58,7 @@
 
 .section a {
     text-decoration: none;
+    color: inherit;
 }
 
 .section a:visited{
