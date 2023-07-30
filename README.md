@@ -1,4 +1,7 @@
 # Church Website w/ React
+[Live Website](https://cota-z5iz.onrender.com/)
+
+![Screenshot of website home page](https://github.com/Jr-rojas/COTA/blob/main/project_img/COTA_Home_page.png)
 
 # Getting Started with Create React App and Redux
 
