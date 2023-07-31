@@ -83,6 +83,7 @@ body {
     background-color: inherit;
     border-top: 5px solid #3C82D4;
     color: #3C82D4;
+    transition: all .1s ease;
 }
 
 .fanSection{
@@ -259,7 +260,7 @@ hr{
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 25%;
+        width: 100%;
         padding: 1rem;
         background-color: #919191;
     }
