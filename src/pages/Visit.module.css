@@ -1,0 +1,142 @@
+.heroSection{
+    background-image: url('../../public/shared/img/visit.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: rgb(233, 234, 236);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.heroSection div {
+    margin: 10px 10%;
+}
+
+.heroSection div h1{
+    margin: 10px 5px;
+}
+
+.smallSection{
+    background-color: aliceblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallSection div h1{
+    letter-spacing: 2pt;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.colorText{
+    color: #3C82D4;
+}
+.locations{
+    background-color: #fff;
+}
+
+.locationGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1416px;
+    margin: auto;
+}
+
+.churchCard{
+    margin: 20px auto 20px auto;
+}
+
+.churchCardBody{
+    background-color: #fff;
+    padding: 5px 8px;
+    position: relative;
+}
+
+.churchCardBody .title{
+    font-size: 23px;
+    margin-top:5px;
+    letter-spacing: 1.5pt;
+}
+
+.churchCardBody .title::after{
+    content: '';
+    width: 50%;
+    height: 4px;
+    background-color: #3C82D4;
+    position: absolute;
+    left: 8px;
+    top: 48px;
+}
+
+.cardImg{
+    background-image: url(../../public/shared/img/bakersfield-CA.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 250px;
+    width: 400px;
+}
+
+.info{
+    padding: 0 8px;
+}
+
+.cardGroup{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.cardGroup > :nth-child(2){
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px){
+    .locationGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+
+        overflow: hidden;
+    }
+    .cardImg{
+        width: 380px;
+    }
+
+    .cardGroup > :nth-child(2){
+        padding-left: 15px;
+    }
+
+    .churchCardBody > :nth-child(3) a{
+        margin-left: 0;
+    }
+
+    .smallSection div h1{
+        letter-spacing: 2pt;
+        font-size: 25px !important;
+        line-height: 30px;
+        margin: 0 auto;
+    }
+    .cardGroup{
+        flex-wrap: wrap;
+    }
+}
+
+@media ((max-width: 1200px) and (min-width: 769px)) {
+    .locationGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .smallSection div h1{
+        letter-spacing: 2pt;
+        font-size: 35px;
+        margin: 0 auto;
+    }
+}

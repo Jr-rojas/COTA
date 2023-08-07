@@ -107,7 +107,6 @@ body {
 .buttons a {
     text-decoration: none;
     outline: none;
-    min-width: 170px;
     padding: 15px 15px;
     margin: 20px 10px 0 10px;
     margin-right: 10px;
@@ -117,12 +116,32 @@ body {
     background: #3C82D4;
 }
 
+.lg a{
+    min-width: 170px;
+}
+
 .la{
     justify-content: start;
 }
 
+.ra{
+    justify-content: end;
+}
+
 .buttons.hover-dark a:hover {
     background:#333;
+    color: #fff;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease
+}
+
+.buttons.hover-dark-inverted a{
+    background:#333 !important;
+}
+
+.buttons.hover-dark-inverted a:hover {
+    background:#3C82D4 !important;
     color: #fff;
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
