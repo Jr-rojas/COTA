@@ -1,5 +1,5 @@
 .heroSection{
-    background-image: url('../../public/shared/img/visit.jpg');
+    background-image: url('../app/shared/img/visit.jpg');
     background-size: cover;
     background-position: center;
 
@@ -48,11 +48,12 @@
 
 .churchCard{
     margin: 20px auto 20px auto;
+    width: 415px;
 }
 
 .churchCardBody{
     background-color: #fff;
-    padding: 5px 8px;
+    padding: 5px;
     position: relative;
 }
 
@@ -73,16 +74,23 @@
 }
 
 .cardImg{
-    background-image: url(../../public/shared/img/bakersfield-CA.jpg);
     background-size: cover;
     background-position: center;
 
     height: 250px;
-    width: 400px;
 }
 
 .info{
     padding: 0 8px;
+}
+
+.info > :first-child{
+    margin-bottom: 30px;
+}
+
+.info strong{
+    display: inline-block;
+    min-width: 100px;
 }
 
 .cardGroup{
@@ -92,8 +100,8 @@
 }
 
 .cardGroup > :nth-child(2){
-    padding-left: 40px;
-    padding-bottom: 40px;
+    padding-left: 45px;
+    padding-bottom: 65px;
 }
 
 @media (max-width: 768px){
@@ -104,8 +112,9 @@
 
         overflow: hidden;
     }
-    .cardImg{
-        width: 380px;
+
+    .churchCard{
+        width: 390px;
     }
 
     .cardGroup > :nth-child(2){
@@ -117,17 +126,18 @@
     }
 
     .smallSection div h1{
-        letter-spacing: 2pt;
-        font-size: 25px !important;
+        letter-spacing: 1.5pt;
+        font-size: 24px !important;
         line-height: 30px;
         margin: 0 auto;
+        text-align: center;
     }
     .cardGroup{
         flex-wrap: wrap;
     }
 }
 
-@media ((max-width: 1200px) and (min-width: 769px)) {
+@media ((max-width: 1230px) and (min-width: 769px)) {
     .locationGrid{
         display: grid;
         grid-template-columns: 1fr 1fr;

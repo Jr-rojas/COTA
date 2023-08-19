@@ -1,5 +1,5 @@
 .hero{
-    background-image: url('../../public/shared/img/banner.jpg');
+    background-image: url('../app/shared/img/banner.jpg');
     background-size: cover;
     background-position: center;
 
@@ -129,7 +129,7 @@
 }
 
 .img2{
-    background-image: url('../../public/shared/img/youth camp.png');
+    background-image: url('../app/shared/img/youth camp.png');
     background-size:cover;
     background-position:center;
 

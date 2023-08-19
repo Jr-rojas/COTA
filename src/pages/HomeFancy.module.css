@@ -16,7 +16,7 @@
 }
 
 .fanSection{
-    background-image: url('../../public/shared/img/banner.jpg');
+    background-image: url('../app/shared/img/banner.jpg');
     background-size: cover;
     background-position: center;
 
@@ -164,7 +164,7 @@
 }
 
 .imgR{
-    background: url("../../public/shared/img/toma_tu_llamado.png") center center / cover no-repeat;
+    background: url("../app/shared/img/toma_tu_llamado.png") center center / cover no-repeat;
     visibility: visible;
     opacity: 1;
 

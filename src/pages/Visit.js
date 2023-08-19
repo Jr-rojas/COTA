@@ -1,4 +1,5 @@
 import visitStyles from "./Visit.module.css"
+import ChurchLocationList from "../features/churches/churchesList"
 
 export default function Visit(){
     return(
@@ -13,7 +14,8 @@ export default function Visit(){
                     <h1>One Family. <span className={visitStyles.colorText}>Multiple Locations.</span></h1>
                 </div>
             </section>
-            <section className={visitStyles.locations}>
+            <ChurchLocationList/>
+            {/* <section className={visitStyles.locations}>
                 <div className={visitStyles.locationGrid}>
                     <div className={visitStyles.churchCard}>
                         <div className={visitStyles.cardImg}></div>
@@ -88,7 +90,7 @@ export default function Visit(){
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }
