@@ -55,14 +55,14 @@
     z-index:2;
 }
 
-.h1{
+/* .h1{
     font-size: 60px;
     line-height: 60px;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: 'Poppins';
     font-weight: 700;
-}
+} */
 
 .hr{
     width: 100%;
@@ -129,7 +129,7 @@
 }
 
 .img2{
-    background-image: url('../app/shared/img/youth camp.png');
+    background-image: url('../app/shared/img/youth_camp.png');
     background-size:cover;
     background-position:center;
 

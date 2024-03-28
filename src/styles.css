@@ -61,8 +61,6 @@ body {
     display: none;
 }
 
-
-
 .nav a {
     color: inherit;
     text-decoration: none;
@@ -157,16 +155,26 @@ body {
 }
 
 p{
-    font-weight: 400 !important;
+    font-weight: 500 !important;
 }
 
 h1{
-    font-size: 65px;
+    font-size: 60px;
     line-height: 60px;
     text-transform: uppercase;
     margin: 0 0 20px 0;
     font-family: 'Poppins';
     font-weight: 900 !important;
+}
+
+h2{
+    font-size: 30px !important;
+    line-height: 1;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 h4{
@@ -288,6 +296,7 @@ hr{
       display: flex; /* Show the navigation links when the nav is active */
       flex-direction: column;
       align-items: center;
+      z-index:1;
     }
     
     .nav-toggle {

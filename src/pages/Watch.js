@@ -1,3 +1,8 @@
+import HeroAlt from "../components/HeroAlt"
+
+
 export default function Watch(){
-    return<h1>Watch</h1>
+    return(
+        <HeroAlt page="Watch" />
+    )
 }

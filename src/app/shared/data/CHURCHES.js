@@ -243,7 +243,4 @@ export const CHURCHES = [
           }
         ]
       },
- 
- 
 ];
-  

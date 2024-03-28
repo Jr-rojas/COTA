@@ -1,24 +1,4 @@
-.heroSection{
-    background-image: url('../app/shared/img/visit.jpg');
-    background-size: cover;
-    background-position: center;
-
-    color: rgb(233, 234, 236);
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.heroSection div {
-    margin: 10px 10%;
-}
-
-.heroSection div h1{
-    margin: 10px 5px;
-}
-
-.smallSection{
+.smallSection {
     background-color: aliceblue;
     height: 100px;
     display: flex;
@@ -26,44 +6,45 @@
     align-items: center;
 }
 
-.smallSection div h1{
+.smallSection div h1 {
     letter-spacing: 2pt;
-    font-size: 40px;
+    font-size: 36px;
     margin: 0 auto;
 }
 
-.colorText{
+.colorText {
     color: #3C82D4;
 }
-.locations{
+
+.locations {
     background-color: #fff;
 }
 
-.locationGrid{
+.locationGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1416px;
     margin: auto;
 }
 
-.churchCard{
+.churchCard {
     margin: 20px auto 20px auto;
     width: 415px;
 }
 
-.churchCardBody{
+.churchCardBody {
     background-color: #fff;
     padding: 5px;
     position: relative;
 }
 
-.churchCardBody .title{
+.churchCardBody .title {
     font-size: 23px;
-    margin-top:5px;
+    margin-top: 5px;
     letter-spacing: 1.5pt;
 }
 
-.churchCardBody .title::after{
+.churchCardBody .title::after {
     content: '';
     width: 50%;
     height: 4px;
@@ -73,39 +54,216 @@
     top: 48px;
 }
 
-.cardImg{
+.cardImg {
     background-size: cover;
     background-position: center;
 
     height: 250px;
 }
 
-.info{
+.info {
     padding: 0 8px;
 }
 
-.info > :first-child{
+.info> :first-child {
     margin-bottom: 30px;
 }
 
-.info strong{
+.info strong {
     display: inline-block;
     min-width: 100px;
 }
 
-.cardGroup{
+.cardGroup {
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
+    gap: 8px;
+    min-height: 195px;
 }
 
-.cardGroup > :nth-child(2){
+.cardGroup> :nth-child(2) {
     padding-left: 45px;
     padding-bottom: 65px;
 }
 
-@media (max-width: 768px){
-    .locationGrid{
+.wte {
+    background-color: #050505;
+    background-image: url("../app/shared/img/b&w_Church.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.wte p {
+    color: #fff;
+}
+
+.wte h2 {
+    color: #fff;
+}
+
+.wte a {
+    color: #3C82D4;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wte a:hover {
+    color: #4a4a4a;
+}
+
+.wte>div {
+    display: flex;
+    position: relative;
+    max-width: 1540px;
+    padding: 3% 2%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blurryBackground {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: #383838e2;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: 1 !important;
+}
+
+.wte>div div {
+    padding: 5%;
+    z-index: 2;
+}
+
+.wte>div>div h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.wte>div>div p {
+    font-size: 15px;
+}
+
+.wte>div>div img {
+    height: 300px;
+    width: 500px;
+}
+
+.forEveryone {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+}
+
+.textGroup {
+    width: 25%;
+    padding: 2%;
+    margin: 15px auto;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.textGroup h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.textGroup p{
+    font-size: 15px;
+}
+
+.groupSquares {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.groupSquares a{
+    text-decoration: none;
+}
+
+.square {
+    height: auto;
+    background-color: #3C82D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.square h3{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: white;
+    padding: 20px 10px 15px 10px;
+}
+
+.square hr{
+    width: 50%;
+    height: 3px;
+    background: #F82626;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+.square:hover{
+    background-color: #4a4a4a;
+}
+
+.square:hover hr{
+    background: #3C82D4;
+}
+
+.endingWelcome{
+    display: flex;
+    align-items:center;
+    justify-content:start;
+    position:relative;
+    background-color: #fff;
+    background-image: url("../app/shared/img/banner.jpg");
+    background-position:center;
+    background-size:cover;
+}
+
+.endingWelcome > div{
+    margin: 8px;
+    padding: 4%;
+    max-width: 1540px;
+}
+
+.endingWelcome div h1{
+    line-height: 35px;
+    font-size: 45px;
+    font-weight: 600 !important;
+    margin: 0 auto 30px auto;
+    position: relative;
+    color: #fff;
+}
+
+.endingWelcome div h1::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #3C82D4;
+    position: absolute;
+    left: -30%;
+    top: 40px;
+}
+
+.endingWelcome div h4{
+    color: #fff ;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .locationGrid {
         display: grid;
         grid-template-columns: 1fr;
         margin: auto;
@@ -113,40 +271,74 @@
         overflow: hidden;
     }
 
-    .churchCard{
+    .churchCard {
         width: 390px;
     }
 
-    .cardGroup > :nth-child(2){
+    .cardGroup> :nth-child(2) {
         padding-left: 15px;
     }
 
-    .churchCardBody > :nth-child(3) a{
+    .churchCardBody> :nth-child(3) a {
         margin-left: 0;
     }
 
-    .smallSection div h1{
+    .smallSection div h1 {
         letter-spacing: 1.5pt;
         font-size: 24px !important;
         line-height: 30px;
         margin: 0 auto;
         text-align: center;
     }
-    .cardGroup{
+
+    .cardGroup {
         flex-wrap: wrap;
+    }
+
+    .wte>div {
+        display: flex;
+        padding: 10px 2%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wte>div>div img {
+        height: 200px;
+        width: 350px;
+    }
+
+    .forEveryone{
+        flex-direction: column;
+    }
+
+    .textGroup{
+        width: 100%;
+    }
+
+    .groupSquares{
+        width: 100%;
+        min-height: 400px;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 }
 
 @media ((max-width: 1230px) and (min-width: 769px)) {
-    .locationGrid{
+    .locationGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: auto;
     }
 
-    .smallSection div h1{
+    .smallSection div h1 {
         letter-spacing: 2pt;
         font-size: 35px;
         margin: 0 auto;
+    }
+
+    .wte>div>div img {
+        height: 250px;
+        width: 400px;
     }
 }

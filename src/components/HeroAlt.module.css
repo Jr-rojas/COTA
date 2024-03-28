@@ -1,0 +1,14 @@
+.heroSection{
+    color: rgb(233, 234, 236);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroSection div{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

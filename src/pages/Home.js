@@ -57,7 +57,7 @@ export default function Home(){
                                 <h2>Junio 12</h2>
                             </div>
                             <div className='box'>
-                                <span><img src="./shared/img/youth camp.png" alt='Youth camp' width="100%"/></span>
+                                <span><img src="../app/shared/img/youth_camp.png" alt='Youth camp' width="100%"/></span>
                                 <span className='overlay'>
                                     <span className='title'>Camp</span>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
