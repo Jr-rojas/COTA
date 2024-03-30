@@ -224,7 +224,7 @@
 .endingWelcome{
     display: flex;
     align-items:center;
-    justify-content:start;
+    justify-content:flex-start;
     position:relative;
     background-color: #fff;
     background-image: url("../app/shared/img/banner.jpg");

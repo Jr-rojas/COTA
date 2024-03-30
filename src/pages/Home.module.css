@@ -118,7 +118,7 @@
 }
 
 .img{
-    background-image: url('../../public/leadPastor.jpg');
+    /* background-image: url('../../public/leadPastor.jpg'); */
     background-size:cover;
     background-position:center;
 

@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import styles from './Home.module.css'
 import fanStyles from './HomeFancy.module.css'
+import image from "../app/shared/img/leadPastor.jpg"
 
 export default function Home(){
     return(
@@ -18,7 +19,7 @@ export default function Home(){
                             <a href="/">Leer Mas</a>
                         </div>
                     </div>
-                    <div className={styles.img}/>
+                    <div className={styles.img} style={{ backgroundImage: `url(${image})` }}/>
                 </div>
             </section>
 
@@ -57,7 +58,7 @@ export default function Home(){
                                 <h2>Junio 12</h2>
                             </div>
                             <div className='box'>
-                                <span><img src="../app/shared/img/youth_camp.png" alt='Youth camp' width="100%"/></span>
+                                <span><img src="./shared/img/actividad_del_ano.jpg" alt='Youth camp' width="100%"/></span>
                                 <span className='overlay'>
                                     <span className='title'>Camp</span>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -70,7 +71,7 @@ export default function Home(){
                                 <h2>Julio 05</h2>
                             </div>
                             <div className='box'>
-                                <span><img src="./shared/img/youth camp (2).png" alt='Youth camp' width="100%"/></span>
+                                <span><img src="./shared/img/youth_camp_1.png" alt='Youth camp' width="100%"/></span>
                                 <span className='overlay'>
                                     <span className='title'>Bautizo</span>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -83,7 +84,7 @@ export default function Home(){
                                 <h2>Agusto 23</h2>
                             </div>
                             <div className='box'>
-                                <span><img src="./shared/img/youth camp (3).png" alt='Youth camp' width="100%"/></span>
+                                <span><img src="./shared/img/youth_camp_2.png" alt='Youth camp' width="100%"/></span>
                                 <span className='overlay'>
                                     <span className='title'>Encuentro</span>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -96,7 +97,7 @@ export default function Home(){
                                 <h2>Septiembre 17</h2>
                             </div>
                             <div className='box'>
-                                <span><img src="./shared/img/youth camp (1).png" alt='Youth camp' width="100%"/></span>
+                                <span><img src="./shared/img/youth_camp_3.png" alt='Youth camp' width="100%"/></span>
                                 <span className='overlay'>
                                     <span className='title'>Pastores y Lideres</span>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
