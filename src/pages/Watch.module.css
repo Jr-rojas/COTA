@@ -22,6 +22,7 @@
     max-width: 1200px;
     text-align: center;
     background-color: #ffffff;
+    animation: colorFade 7s ease-in-out infinite alternate;
 }
 
 .boxTitle{
@@ -33,18 +34,9 @@
     text-transform: uppercase;
 }
 
-.wrapper:hover{
-    background-color: black;
-    color: aliceblue;
-}
-
-.wrapper:hover .textEm{
-    -webkit-text-stroke:2px aliceblue ;
-}
-
 .textEm{
-    -webkit-text-stroke: 2px black ;
     -webkit-text-fill-color: transparent;
+    animation: strokeFade 7s ease-in-out infinite alternate;
 }
 
 .album{
@@ -140,7 +132,7 @@
     display: grid;
     grid-template-columns:repeat(3, max-content);
     max-width: 250px;
-    margin: 0 auto;
+    margin: 15px auto 0;
     justify-content: space-evenly;
 }
 
@@ -151,4 +143,41 @@
 
 .iconGrid a:hover{
     color: #d3d3d3;
+}
+
+@keyframes colorFade {
+    0% {
+        background-color: #ffffff;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color: aliceblue;
+    }
+    100% {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+@keyframes strokeFade {
+    0% {
+       -webkit-text-stroke: 2px black;
+    }
+    50% {
+        -webkit-text-stroke: 2px #3c82d4;
+    }
+    100% {
+        -webkit-text-stroke: 2px black;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .container div{
+        margin: 8px auto;
+    }
 }
