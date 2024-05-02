@@ -12,6 +12,7 @@ import ThousandOaksImg from '../img/ThousandOaks.png';
 import OgdenUTImg from '../img/ogden.webp';
 import WaukeganILImg from '../img/waukegan.jpg';
 import SacramentoImg from '../img/sacramento.jpg';
+import SeattleImg from '../img/seattle_wa.jpg'
 
 
 export const CHURCHES = [
@@ -243,4 +244,18 @@ export const CHURCHES = [
           }
         ]
       },
+      {
+        id: 14,
+        name: "COTA - Seattle",
+        city: "Seattle",
+        state: "Washinton",
+        address: "TBA",
+        image: SeattleImg,
+        mainService: [
+          {
+            day: "TBA",
+            time: ""
+          }
+        ]
+      }
 ];

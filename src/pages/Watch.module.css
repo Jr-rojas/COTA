@@ -1,0 +1,154 @@
+.container {
+    background-color: #ffffff;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.titleWrapper{
+    display:flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin: -50px 8px;
+    border: 10px solid black;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.boxTitle{
+    margin: 25px;
+    font-size: 2.5rem;
+    font-family: "Poppins";
+    letter-spacing: 1.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wrapper:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.wrapper:hover .textEm{
+    -webkit-text-stroke:2px aliceblue ;
+}
+
+.textEm{
+    -webkit-text-stroke: 2px black ;
+    -webkit-text-fill-color: transparent;
+}
+
+.album{
+    width: 430px;
+    height: 400px;
+    margin-top: 160px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.album div{
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.album div::after{
+    content:"";
+    background-color:#3C82D4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+
+.album:hover div::after{
+    opacity: 0;
+}
+
+.album2{
+    width: 430px;
+    height: 400px;
+    margin-left: -30px;
+    position: relative;
+}
+
+.album2 div{
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.album2 div::after{
+    content:"";
+    background-color: #3C82D4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+
+.album2:hover div::after{
+    opacity: 0;
+}
+
+.album3 {
+    width: 430px;
+    height: 400px;
+    margin-top:430px;
+    margin-left:-430px;
+    position: relative;
+}
+
+.album3 div{
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.album3 div::after{
+    content:"";
+    background-color:#3C82D4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+
+.album3:hover div::after{
+    opacity: 0;
+}
+
+.iconGrid{
+    display: grid;
+    grid-template-columns:repeat(3, max-content);
+    max-width: 250px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.iconGrid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.iconGrid a:hover{
+    color: #d3d3d3;
+}

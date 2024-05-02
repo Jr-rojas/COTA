@@ -1,7 +1,6 @@
 import styles from './Hero.module.css'
-import { Button } from 'reactstrap'
 
-export default function Hero({ title, btnText, btnText2 }){
+export default function Hero({ title, btnText, btnText2 }) {
     return (
         <div className={styles.section}>
             <div className={styles.hero}>
@@ -10,7 +9,7 @@ export default function Hero({ title, btnText, btnText2 }){
                     <div className={styles.buttonGroup}>
                         <div className={styles.btns}>
                             <a href="/">Soy Nuevo</a>
-                            <a href="/">En Vivo</a>
+                            <a href="https://www.youtube.com/@ChurchoftheAmericas" target="_blank" rel="noreferrer">En Vivo</a>
                         </div>
                     </div>
                 </div>

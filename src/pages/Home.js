@@ -2,8 +2,12 @@ import Hero from '../components/Hero'
 import styles from './Home.module.css'
 import fanStyles from './HomeFancy.module.css'
 import image from "../app/shared/img/leadPastor.jpg"
+import FeaturedEvents from '../components/FeaturedEvents'
+import { nextEvents } from '../components/EventCard/eventsSlice'
 
 export default function Home(){
+    const upcomingEvents = nextEvents();
+
     return(
         <>
             <Hero title="Bienvenidos"/>
@@ -46,6 +50,7 @@ export default function Home(){
 
             {/* EVENTS SECTION */}
             <section className={fanStyles.fanSection} >
+                {/* <FeaturedEvents/> */}
                 <div className='container'>
                     <div className={styles.content}>
                         <h4>Acompañanos</h4>
@@ -53,7 +58,11 @@ export default function Home(){
                         <hr className={styles.hr}/>
                     </div>
                     <div className='items'>
-                        <div className='item'>
+                        {upcomingEvents.map((event) =>{
+                            return (<FeaturedEvents key={event.id} event={event}/>)
+                        })}
+                        
+                        {/* <div className='item'>
                             <div className='box-header'>
                                 <h2>Junio 12</h2>
                             </div>
@@ -104,7 +113,10 @@ export default function Home(){
                                     <span className='buttons hover-dark'><a href='/events'>Mas Detalles</a></span>
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
+                    </div>
+                    <div className='buttons lg hover-dark'>
+                        <a href='/events' >Mas Eventos</a>
                     </div>
                 </div>
             </section>
@@ -122,7 +134,7 @@ export default function Home(){
                             </p>
                             <div className='buttons lg la hover-dark'>
                                 <a href='/' >Detalles</a>
-                                <a href='/' >sembrar</a>
+                                <a href='/give' >sembrar</a>
                             </div>
                         </div> 
                     </div>

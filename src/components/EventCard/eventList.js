@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { selectAllEvents } from "./eventsSlice";
 import EventCard from "./EventCard";
 import { GridLayout } from "../GridLayout";
-import { DropdownChecklist, ChecklistLabel, ChecklistUl, Button } from "../DropdownChecklist";
+import { DropdownChecklist, ChecklistLabel, ChecklistUl} from "../DropdownChecklist";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCaretDown, faSquareCaretUp } from '@fortawesome/free-solid-svg-icons';
 

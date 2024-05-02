@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Poppins";
 }
 
 body {
@@ -8,6 +9,7 @@ body {
 
 .container{
     padding: 25px 85px !important;
+    margin-bottom: 30px;
 }
 
 .alerts{

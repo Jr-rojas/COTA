@@ -28,7 +28,7 @@ const ChurchLocationCard = ({location}) =>{
                             </p>
                         </div>
                         <div className='buttons hover-dark-inverted'>
-                            <a href={googleMapsUrl} target="_blank">direccion</a>
+                            <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">direccion</a>
                         </div>
                     </div>
                     <div className='buttons lg la hover-dark'>

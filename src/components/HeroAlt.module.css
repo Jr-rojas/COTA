@@ -1,4 +1,4 @@
-.heroSection{
+.heroSection {
     color: rgb(233, 234, 236);
     height: 400px;
     display: flex;
@@ -6,9 +6,11 @@
     justify-content: center;
 }
 
-.heroSection div{
+.heroSection>div {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 1400px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
 }

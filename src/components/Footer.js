@@ -18,18 +18,19 @@ export default function Footer(){
                     <div className={FooterStyles.container}>
                         <h5>LOCATIONS</h5>
                         <ul>
-                            <li><a>Los Angeles, CA</a></li>
-                            <li><a>Bakersfield, CA</a></li>
-                            <li><a>Fresno, CA</a></li>
-                            <li><a>Coachella, CA</a></li>
-                            <li><a>Thousand Oaks, CA</a></li>
-                            <li><a>Las Vegas, NV</a></li>
-                            <li><a>Reno, NV</a></li>
-                            <li><a>Glassboro, NJ</a></li>
-                            <li><a>Denver, CO</a></li>
-                            <li><a>Phenix, AZ</a></li>
-                            <li><a>Albuquerque, NM</a></li>
-                            <li><a>Ogden, UT</a></li>
+                            <li><a href="/">Los Angeles, CA</a></li>
+                            <li><a href="/">Bakersfield, CA</a></li>
+                            <li><a href="/">Fresno, CA</a></li>
+                            <li><a href="/">Coachella, CA</a></li>
+                            <li><a href="/">Thousand Oaks, CA</a></li>
+                            <li><a href="/">Las Vegas, NV</a></li>
+                            <li><a href="/">Reno, NV</a></li>
+                            <li><a href="/">Glassboro, NJ</a></li>
+                            <li><a href="/">Denver, CO</a></li>
+                            <li><a href="/">Phenix, AZ</a></li>
+                            <li><a href="/">Albuquerque, NM</a></li>
+                            <li><a href="/">Ogden, UT</a></li>
+                            <li><a href="/">Seattle, WA</a></li>
                         </ul>
                     </div>
                     <div className={FooterStyles.container}>
