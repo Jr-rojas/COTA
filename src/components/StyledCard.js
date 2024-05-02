@@ -22,18 +22,28 @@ const Title = styled.h3`
 `
 
 const Description = styled.p`
-    color: black;
+    color: #707070;
     margin-top: .5rem;
 `
 
 export const StyledCard = ({children, title, description}) => {
+    const isAddressCard = title === "Mail in Gift";
+
     return (
         <Card>
             {children}
             <div>
-                <Title>{title}</Title>
-                <Description>
-                {description}
+                <Title isAddress={isAddressCard}>{title}</Title>
+                <Description isAddress={isAddressCard}>
+                    {isAddressCard ? (
+                        <>
+                            John Doe<br />
+                            123 Main Street<br />
+                            Anytown, USA
+                        </>
+                    ) : (
+                        description
+                    )}
                 </Description>
             </div>
         </Card>

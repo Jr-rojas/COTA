@@ -3,7 +3,7 @@ import styles from './Home.module.css'
 import { FlexCard, FlexCenter } from "../components/Flex";
 import { Container } from "../components/StyledContainer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons';
+import { faHandHoldingDollar, faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 import image from "../app/shared/img/aposento.jpg"
 import { StyledCard } from "../components/StyledCard";
 
@@ -12,10 +12,10 @@ export default function Give() {
         <>
             <HeroAlt page="Give">
             </HeroAlt>
-            <section style={{ backgroundColor: "#DCDCDC" }}>
+            <section style={{ backgroundColor: "#f8f7f4" }}>
                 <FlexCenter flexDirection="column">
                     <Container>
-                        <h2>Why we give</h2>
+                        <h2 style={{color:"black"}}>Why we give</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis est porta, dignissim nunc ut, dapibus neque. Nam sagittis tellus non nunc faucibus, a fermentum urna elementum.</p>
                         <br />
                         <p><em>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</em></p>
@@ -47,12 +47,12 @@ export default function Give() {
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
                         />
                         <StyledCard
-                            children={<FontAwesomeIcon icon={faHandHoldingDollar} size="2xl" />}
-                            title="Mail in"
+                            children={<FontAwesomeIcon icon={faEnvelope} size="2xl" />}
+                            title="Mail in Gift"
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
                         />
                         <StyledCard
-                            children={<FontAwesomeIcon icon={faHandHoldingDollar} size="2xl" />}
+                            children={<FontAwesomeIcon icon={faMobileScreen} size="2xl" />}
                             title="Give online"
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
                         />
