@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import visitStyles from "../../pages/Visit.module.css"
 
 const ChurchLocationCard = ({location}) =>{
-    const { name,address, image, mainService } = location
+    const { name,address, image, mainService, id } = location
 
     const addressParts = address.split('.')
     const googleMapsUrl = `https://www.google.com/maps/place/${encodeURIComponent(address)}`;
@@ -32,7 +33,7 @@ const ChurchLocationCard = ({location}) =>{
                         </div>
                     </div>
                     <div className='buttons lg la hover-dark'>
-                            <a href="/">Mas Informacion</a>
+                            <Link to={`/visit/${id}`}><a href="/">Mas Informacion</a></Link>
                         </div>
                 </div>
             </div>
