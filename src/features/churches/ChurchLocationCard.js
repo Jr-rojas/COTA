@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import visitStyles from "../../pages/Visit.module.css"
 
 const ChurchLocationCard = ({location}) =>{
-    const { name,address, image, mainService, id } = location
+    const { name,address, image, mainService, id } = location;
+    console.log(image)
+
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     const addressParts = address.split('.')
     const googleMapsUrl = `https://www.google.com/maps/place/${encodeURIComponent(address)}`;
@@ -10,7 +15,7 @@ const ChurchLocationCard = ({location}) =>{
 
     return(
         <div className={visitStyles.churchCard}>
-                <div className={visitStyles.cardImg} style={{backgroundImage: `url(${image})`}}></div>
+                <div className={visitStyles.cardImg} style={{backgroundImage:  `url(${image})`}}></div>
                 <div className={visitStyles.churchCardBody}>
                     <h3 className={visitStyles.title}>{name}</h3>
                     <div className={visitStyles.cardGroup}>
@@ -33,7 +38,7 @@ const ChurchLocationCard = ({location}) =>{
                         </div>
                     </div>
                     <div className='buttons lg la hover-dark'>
-                            <Link to={`/visit/${id}`}><a href="/">Mas Informacion</a></Link>
+                            <Link to={`/visit/${id}`} onClick={handleScrollToTop}><a href="/">Mas Informacion</a></Link>
                         </div>
                 </div>
             </div>

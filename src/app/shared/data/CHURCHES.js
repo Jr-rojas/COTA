@@ -13,6 +13,7 @@ import OgdenUTImg from '../img/ogden.webp';
 import WaukeganILImg from '../img/waukegan.jpg';
 import SacramentoImg from '../img/sacramento.jpg';
 import SeattleImg from '../img/seattle_wa.jpg'
+import laPastor from '../img/leadPastor.jpg'
 
 
 export const CHURCHES = [
@@ -23,6 +24,8 @@ export const CHURCHES = [
       state: "California",
       address: "6408 Whittier Blvd. Los Angeles, CA 90022",
       image: LosAngelesImg,
+      leadPastorImg:laPastor,
+      pastorName:["John Doe", "Steve Smith"],
       mainService: [
         {
           day: "Domingo",

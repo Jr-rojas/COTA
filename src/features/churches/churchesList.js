@@ -10,7 +10,7 @@ const ChurchLocationList = () => {
             <div className={visitStyles.locationGrid}>
                 {locations.map((location) => {
                     return(
-                        <ChurchLocationCard location={location}/>
+                        <ChurchLocationCard location={location} key={location.id}/>
                     )
                 })}
             </div>

@@ -158,7 +158,7 @@ body {
 
 p{
     font-weight: 500 !important;
-    font-size: clamp(15px, 2.3vw, 20px);
+    font-size: clamp(16px, 1.6vw, 19px);
 }
 
 h1{
@@ -274,6 +274,10 @@ hr{
     width: 100%;
 }
 
+ul{
+    list-style: none;
+    margin: 0;
+}
 
 
 

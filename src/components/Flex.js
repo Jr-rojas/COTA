@@ -5,7 +5,10 @@ export const FlexCenter = styled.div`
     flex-direction:${props => (props.flexDirection ? props.flexDirection : "")};
     text-align: center;
     align-items:center;
-    justify-content: center;
+    justify-content: ${props => (props.justifyContent ? props.justifyContent : "center")};
+    gap:${props => (props.gap ? props.gap : "")};
+    flex-wrap:${props => (props.flexWrap ? props.flexWrap : "nowrap")};
+    max-width:${props => (props.maxWidth ? props.maxWidth : "")};
 `
 
 export const FlexColumn = styled.div`

@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import styles from './Home.module.css'
 import fanStyles from './HomeFancy.module.css'
 import image from "../app/shared/img/leadPastor.jpg"
+import youthCampImg from "../app/shared/img/youth_camp.png"
 import FeaturedEvents from '../components/FeaturedEvents'
 import { nextEvents } from '../components/EventCard/eventsSlice'
 
@@ -144,7 +145,7 @@ export default function Home(){
             {/* COTA KIDS & COTA YOUTH */}
             <section className={styles.sectionB}>
                 <div className={styles.container2}>
-                    <div className={styles.img2}/>
+                    <div className={styles.img2} style={{backgroundImage: `url(${youthCampImg})`}}/>
                     <div className={styles.content2}>
                         <h1 className={styles.h1}>COTA Kids & Cota Youth</h1>
                         <hr className={styles.hr2}/>
