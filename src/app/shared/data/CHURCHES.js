@@ -44,6 +44,8 @@ export const CHURCHES = [
         state: "California",
         address: "1030 Niles St. Bakersfield, CA 93305",
         image: BakersfieldImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -62,6 +64,8 @@ export const CHURCHES = [
         state: "Nevada",
         address: "15 North Mojave Rd. Las Vegas, NV 89101",
         image: LasVegasImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -80,6 +84,8 @@ export const CHURCHES = [
         state: "Colorado",
         address: "3870 Niagara St. Denver, CO 80207",
         image: DenverImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -112,6 +118,8 @@ export const CHURCHES = [
         state: "California",
         address: "53891 Amethyst Ct. Coachella, CA  92236",
         image: CoachellaImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -130,6 +138,8 @@ export const CHURCHES = [
         state: "New Mexico",
         address: "3717 Fourth St NW. Albuquerque, NM  87107",
         image: AlbuquerqueImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -148,6 +158,8 @@ export const CHURCHES = [
         state: "New Jersey",
         address: "275 E High St. Glassboro, NJ 08028",
         image: GlassboroImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -162,6 +174,8 @@ export const CHURCHES = [
         state: "Arizona",
         address: "3106 N 35th Ave Unit 1. Phoenix, AZ  85019",
         image: PhoenixImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -176,6 +190,8 @@ export const CHURCHES = [
         state: "Nevada",
         address: "2660 Wrondel Way. Reno, NV  89502",
         image: RenoImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -190,6 +206,8 @@ export const CHURCHES = [
         state: "California",
         address: "TBA",
         image: ThousandOaksImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -222,6 +240,8 @@ export const CHURCHES = [
         state: "Illinois",
         address: "900 S Lincoln Ave. Waukegan, IL  60085",
         image: WaukeganILImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",
@@ -240,6 +260,8 @@ export const CHURCHES = [
         state: "California",
         address: "TBA",
         image: SacramentoImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "TBA",
@@ -254,6 +276,8 @@ export const CHURCHES = [
         state: "Washinton",
         address: "TBA",
         image: SeattleImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "TBA",
