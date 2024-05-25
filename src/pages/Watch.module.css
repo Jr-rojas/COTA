@@ -1,9 +1,23 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 834px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
 .container {
     background-color: #ffffff;
     padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    overflow-x:hidden;
 }
 
 .titleWrapper{
@@ -11,7 +25,7 @@
     max-width: 1200px;
     align-items: center;
     justify-content: start;
-    margin-bottom: 50px;
+    margin-bottom: 16px;
 }
 
 .wrapper{
@@ -23,6 +37,7 @@
     text-align: center;
     background-color: #ffffff;
     animation: colorFade 7s ease-in-out infinite alternate;
+    overflow: hidden;
 }
 
 .boxTitle{
@@ -47,16 +62,24 @@
     position: relative;
 }
 
-.album div{
+.album div,
+.album2 div,
+.album3 div{
     background-size:cover;
     background-position:center;
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.album div{
     z-index: 2;
 }
 
-.album div::after{
+.album div::after,
+.album2 div::after,
+.album3 div::after
+{
     content:"";
     background-color:#3C82D4;
     position: absolute;
@@ -65,7 +88,10 @@
     opacity: 40%;
 }
 
-.album:hover div::after{
+.album:hover div::after,
+.album2:hover div::after,
+.album3:hover div::after
+{
     opacity: 0;
 }
 
@@ -77,25 +103,7 @@
 }
 
 .album2 div{
-    background-size:cover;
-    background-position:center;
-    width: 100%;
-    height: 100%;
-    position: relative;
     z-index: 2;
-}
-
-.album2 div::after{
-    content:"";
-    background-color: #3C82D4;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 40%;
-}
-
-.album2:hover div::after{
-    opacity: 0;
 }
 
 .album3 {
@@ -107,25 +115,7 @@
 }
 
 .album3 div{
-    background-size:cover;
-    background-position:center;
-    width: 100%;
-    height: 100%;
-    position: relative;
     z-index: 1;
-}
-
-.album3 div::after{
-    content:"";
-    background-color:#3C82D4;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 40%;
-}
-
-.album3:hover div::after{
-    opacity: 0;
 }
 
 .iconGrid{
@@ -172,12 +162,10 @@
     }
 }
 
-@media (max-width: 768px){
-    .container{
-        flex-wrap: wrap;
-    }
-
-    .container div{
+@media (max-width: 928px){
+    .album,
+    .album2,
+    .album3{
         margin: 8px auto;
     }
 }
