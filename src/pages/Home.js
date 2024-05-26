@@ -5,6 +5,7 @@ import image from "../app/shared/img/leadPastor.jpg"
 import youthCampImg from "../app/shared/img/youth_camp.png"
 import FeaturedEvents from '../components/FeaturedEvents'
 import { nextEvents } from '../components/EventCard/eventsSlice'
+import Button from '../components/Button'
 
 export default function Home(){
     const upcomingEvents = nextEvents();
@@ -20,9 +21,16 @@ export default function Home(){
                         <h1 className={styles.h1}>Nuestra Historia</h1>
                         <hr className={styles.hr}/>
                         <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className='buttons lg la hover-light'>
+                        <Button
+                            title="Leer Mas"
+                            type="link"
+                            link='/about'
+                            bgColor="blue"
+                            hoverColor="light"
+                        />
+                        {/* <div className='buttons lg la hover-light'>
                             <a href="/">Leer Mas</a>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.img} style={{ backgroundImage: `url(${image})` }}/>
                 </div>
@@ -41,9 +49,13 @@ export default function Home(){
                             <hr className={fanStyles.hr}/>
                             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <div className='buttons lg la hover-dark'>
+                            <Button
+                                title="Learn"
+                                hoverColor="dark"
+                            />
+                            {/* <div className='buttons lg la hover-dark'>
                                 <a href='/' >Learn</a>
-                            </div>
+                            </div> */}
                         </div> 
                     </div>
                 </div>

@@ -1,0 +1,43 @@
+.button{
+    border:none;
+    padding: 15px 15px;
+    margin: 20px 10px 0 10px;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    background-color: #3C82D4;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    min-width: 170px;
+    text-decoration: none;
+}
+
+.bg-light{
+    background-color: white;
+    color: #333;
+}
+
+.bg-dark{
+    background-color: #333;
+}
+
+.bg-blue{
+    background-color: #3C82D4;
+}
+
+.hover-light:hover{
+    background-color: white;
+    color: #3C82D4;
+}
+
+.hover-dark:hover{
+    background-color: #333;
+}
+
+.hover-blue:hover{
+    background-color: #3C82D4;
+    color: white;
+}
