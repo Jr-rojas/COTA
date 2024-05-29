@@ -51,6 +51,8 @@ export default function Home(){
                             </p>
                             <Button
                                 title="Learn"
+                                type="link"
+                                link="/"
                                 hoverColor="dark"
                             />
                             {/* <div className='buttons lg la hover-dark'>
