@@ -2,10 +2,6 @@
     background-color: black;
 }
 
-.section a:hover{
-
-}
-
 .section2{
     background-color: black;
     border-top: 2px solid #717171;
@@ -88,6 +84,10 @@ h5 ~ li:hover,
 .form label{
     margin: 0 0 6px 0;
     text-transform: uppercase;
+}
+
+.form span input[type="email"]{
+    max-width: 155px;
 }
 
 .form span input[type="submit"]{
