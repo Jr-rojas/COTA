@@ -5,6 +5,7 @@ import albumBK from "../app/shared/img/luz_a_las_naciones.jpg"
 import albumLA2 from "../app/shared/img/tu_eres_dios.png"
 import styles from "./Watch.module.css"
 import {Container} from "../components/StyledContainer"
+import Button from "../components/Button"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faItunes, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
 
@@ -15,9 +16,12 @@ export default function Watch(){
         <>
             <HeroAlt page="Watch" img={watchImg} hasGradient={true}
                 children={<h3 style={{color: "#e9eaec", margin:"0"}}>Join us live every Sunday @ 6:00PM &  <br/> Wednesday @ 6:00PM from our central church.</h3>}
-                button={<div className='buttons lg la hover-light'>
-                            <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noreferrer" style={{backgroundColor: "#F82626"}}>Live</a>
-                        </div>}
+                button={<Button 
+                            title="Live"
+                            type="external"
+                            link="https://www.facebook.com/churchoftheamericas"
+                            bgColor="blue"
+                            hoverColor="light"/>}
             />
             <section>
 

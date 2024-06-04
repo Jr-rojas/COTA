@@ -1,6 +1,7 @@
 import styles from './Hero.module.css'
+import Button from './Button'
 
-export default function Hero({ title, btnText, btnText2 }) {
+export default function Hero({ title }) {
     return (
         <div className={styles.section}>
             <div className={styles.hero}>
@@ -8,8 +9,17 @@ export default function Hero({ title, btnText, btnText2 }) {
                     <h1 className={styles.heroText}>{title}</h1>
                     <div className={styles.buttonGroup}>
                         <div className={styles.btns}>
-                            <a href="/">Soy Nuevo</a>
-                            <a href="https://www.youtube.com/@ChurchoftheAmericas" target="_blank" rel="noreferrer">En Vivo</a>
+                            <Button
+                                type="link"
+                                disabled={true}
+                                title="Soy Nuevo"
+                                link="/new"
+                            />
+                            <Button
+                                type="external"
+                                title="En Vivo"
+                                link="https://www.youtube.com/@ChurchoftheAmericas"
+                            />
                         </div>
                     </div>
                 </div>

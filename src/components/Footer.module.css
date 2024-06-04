@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+.section a:hover{
+
+}
+
 .section2{
     background-color: black;
     border-top: 2px solid #717171;
@@ -56,28 +60,22 @@
     font-size: 14px;
 }
 
-.section a {
-    text-decoration: none;
-    color: inherit;
-}
-
+.section .list:visited,
 .section a:visited{
     text-decoration: none;
     color: inherit;
 }
 
-.section li{
+.section .list,
+.section li,
+.section a{
     text-decoration: none;
     list-style: none;
 }
 
-.container ul li a:hover{
-    cursor: pointer;
-    color: #3C82D4;
-}
-
-
-h5 ~ li:hover{
+h5 ~ li:hover,
+.container ul .list:hover,
+.section a:hover{
     cursor: pointer;
     color: #3C82D4;
 }

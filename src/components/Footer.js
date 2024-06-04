@@ -1,14 +1,18 @@
 import FooterStyles from './Footer.module.css'
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { selectAllChurches } from '../features/churches/churchesSlice';
 
 export default function Footer(){
+    const locations = selectAllChurches();
+
     return(
         <>
             <section className={FooterStyles.section}>
                 <div className={FooterStyles.content}>
                     <div className={FooterStyles.container}>
                         <h5>LIVE STREAMS</h5>
-                        <p>Domingo</p>
+                        <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer">Domingo @ 6PM</a>
+                        <br/>
                         <h5>QUICKLINKS</h5>
                         <CustomLink to="/visit">Visit</CustomLink>
                         <CustomLink to="/events">Events</CustomLink>
@@ -18,19 +22,10 @@ export default function Footer(){
                     <div className={FooterStyles.container}>
                         <h5>LOCATIONS</h5>
                         <ul>
-                            <li><a href="/">Los Angeles, CA</a></li>
-                            <li><a href="/">Bakersfield, CA</a></li>
-                            <li><a href="/">Fresno, CA</a></li>
-                            <li><a href="/">Coachella, CA</a></li>
-                            <li><a href="/">Thousand Oaks, CA</a></li>
-                            <li><a href="/">Las Vegas, NV</a></li>
-                            <li><a href="/">Reno, NV</a></li>
-                            <li><a href="/">Glassboro, NJ</a></li>
-                            <li><a href="/">Denver, CO</a></li>
-                            <li><a href="/">Phenix, AZ</a></li>
-                            <li><a href="/">Albuquerque, NM</a></li>
-                            <li><a href="/">Ogden, UT</a></li>
-                            <li><a href="/">Seattle, WA</a></li>
+                            {locations.map((location) => {
+                                return (<Link to={`/visit/${location.id}`} key={location.id}className={FooterStyles.list}><li>{location.city}</li></Link>)
+                                })
+                            }
                         </ul>
                     </div>
                     <div className={FooterStyles.container}>

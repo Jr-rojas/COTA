@@ -27,10 +27,8 @@ export default function Home(){
                             link='/about'
                             bgColor="blue"
                             hoverColor="light"
+                            disabled={true}
                         />
-                        {/* <div className='buttons lg la hover-light'>
-                            <a href="/">Leer Mas</a>
-                        </div> */}
                     </div>
                     <div className={styles.img} style={{ backgroundImage: `url(${image})` }}/>
                 </div>
@@ -54,10 +52,8 @@ export default function Home(){
                                 type="link"
                                 link="/"
                                 hoverColor="dark"
+                                disabled={true}
                             />
-                            {/* <div className='buttons lg la hover-dark'>
-                                <a href='/' >Learn</a>
-                            </div> */}
                         </div> 
                     </div>
                 </div>
@@ -76,59 +72,6 @@ export default function Home(){
                         {upcomingEvents.map((event) =>{
                             return (<FeaturedEvents key={event.id} event={event}/>)
                         })}
-                        
-                        {/* <div className='item'>
-                            <div className='box-header'>
-                                <h2>Junio 12</h2>
-                            </div>
-                            <div className='box'>
-                                <span><img src="./shared/img/actividad_del_ano.jpg" alt='Youth camp' width="100%"/></span>
-                                <span className='overlay'>
-                                    <span className='title'>Camp</span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    <span className='buttons hover-dark'><a href='/events'>Mas Detalles</a></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='box-header'>
-                                <h2>Julio 05</h2>
-                            </div>
-                            <div className='box'>
-                                <span><img src="./shared/img/youth_camp_1.png" alt='Youth camp' width="100%"/></span>
-                                <span className='overlay'>
-                                    <span className='title'>Bautizo</span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    <span className='buttons hover-dark'><a href='/events'>Mas Detalles</a></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='box-header'>
-                                <h2>Agusto 23</h2>
-                            </div>
-                            <div className='box'>
-                                <span><img src="./shared/img/youth_camp_2.png" alt='Youth camp' width="100%"/></span>
-                                <span className='overlay'>
-                                    <span className='title'>Encuentro</span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    <span className='buttons hover-dark'><a href='/events'>Mas Detalles</a></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div className='item'>
-                            <div className='box-header'>
-                                <h2>Septiembre 17</h2>
-                            </div>
-                            <div className='box'>
-                                <span><img src="./shared/img/youth_camp_3.png" alt='Youth camp' width="100%"/></span>
-                                <span className='overlay'>
-                                    <span className='title'>Pastores y Lideres</span>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    <span className='buttons hover-dark'><a href='/events'>Mas Detalles</a></span>
-                                </span>
-                            </div>
-                        </div> */}
                     </div>
                     <div className='buttons lg hover-dark'>
                         <a href='/events' >Mas Eventos</a>
@@ -147,10 +90,19 @@ export default function Home(){
                             <hr className={fanStyles.hrR}/>
                             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
-                            <div className='buttons lg la hover-dark'>
-                                <a href='/' >Detalles</a>
-                                <a href='/give' >sembrar</a>
-                            </div>
+                            <Button
+                                title="Detalles"
+                                type="link"
+                                link="/"
+                                hoverColor="dark"
+                                disabled={true}
+                            />
+                            <Button
+                                title="Siembra"
+                                type="link"
+                                link="/give"
+                                hoverColor="dark"
+                            />
                         </div> 
                     </div>
                     <div className={fanStyles.imgR}></div>
@@ -164,10 +116,20 @@ export default function Home(){
                         <h1 className={styles.h1}>COTA Kids & Cota Youth</h1>
                         <hr className={styles.hr2}/>
                         <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className='buttons lg la hover-dark'>
-                            <a href="/">Kids</a>
-                            <a href="/">Youth</a>
-                        </div>
+                        <Button
+                                title="Kids"
+                                type="link"
+                                link="/"
+                                hoverColor="dark"
+                                disabled={true}
+                            />
+                        <Button
+                                title="Youth"
+                                type="link"
+                                link="/"
+                                hoverColor="dark"
+                                disabled={true}
+                            />
                     </div>
                 </div>
             </section>

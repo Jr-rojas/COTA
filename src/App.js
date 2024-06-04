@@ -21,9 +21,6 @@ function App() {
             <Route path="/give" element={<Give/>}/>
           </Routes>
           <Footer/>
-        {/* <div className='alerts'>
-          This website is under construction. Links and buttons might not work.
-      </div> */}
     </>
   );
 }

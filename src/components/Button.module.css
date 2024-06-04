@@ -11,8 +11,14 @@
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2pt;
+    display: inline-block;
     min-width: 170px;
     text-decoration: none;
+}
+
+.disabled{
+    opacity: 0.9;
+    cursor: not-allowed;
 }
 
 .bg-light{
