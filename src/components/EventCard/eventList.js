@@ -36,7 +36,8 @@ const EventsList = () => {
         }
     };
     // filtered events by location
-    const filteredEvents = selectedLocations.length === 0 ? allEvents : allEvents.filter(event => selectedLocations.includes(event.location))
+    const filteredEvents = selectedLocations.length === 0 ? allEvents 
+                            : allEvents.filter(event => selectedLocations.includes(event.location))
 
     return(
         <>

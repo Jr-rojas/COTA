@@ -29,6 +29,24 @@
     margin: auto;
 }
 
+.selectedStates{
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    background-color: white;
+}
+
+.selectedState{
+    background-color: #d4d4d4;
+    padding: 10px;
+    border-radius: 16px;
+}
+.selectedState > span{
+    margin: 10px;
+}
+
 .wte {
     background-color: #050505;
     background-image: url("../app/shared/img/b&w_Church.jpg");
