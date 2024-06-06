@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import visitStyles from "../../pages/Visit.module.css"
+import { ChurchCard, CardImage, CardBody, CardTitle, CardGroup, CardInfo } from "./churchCard.styles";
+import Button from "../../components/Button"
 
 const ChurchLocationCard = ({location}) =>{
     const { name,address, image, mainService, id } = location;
-    console.log(image)
 
     const handleScrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -14,16 +13,16 @@ const ChurchLocationCard = ({location}) =>{
 
 
     return(
-        <div className={visitStyles.churchCard}>
-                <div className={visitStyles.cardImg} style={{backgroundImage:  `url(${image})`}}></div>
-                <div className={visitStyles.churchCardBody}>
-                    <h3 className={visitStyles.title}>{name}</h3>
-                    <div className={visitStyles.cardGroup}>
-                        <div className={visitStyles.info}>
+        <ChurchCard>
+                <CardImage src={image} alt="church location city"></CardImage>
+                <CardBody>
+                    <CardTitle>{name}</CardTitle>
+                    <CardGroup>
+                        <CardInfo>
                             <p><strong>Address</strong> 
-                            <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "inherit"}}>
-                                <br/>{addressParts[0]}<br/>{addressParts[1]}
-                            </a>
+                                <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "inherit"}}>
+                                    <br/>{addressParts[0]}<br/>{addressParts[1]}
+                                </a>
                             </p>
                             <p>
                                 {mainService.map((service) => (
@@ -32,16 +31,25 @@ const ChurchLocationCard = ({location}) =>{
                                     </span>
                                 ))}
                             </p>
-                        </div>
-                        <div className='buttons hover-dark-inverted'>
-                            <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">direccion</a>
-                        </div>
-                    </div>
-                    <div className='buttons lg la hover-dark'>
-                            <Link to={`/visit/${id}`} onClick={handleScrollToTop}><a href="/">Mas Informacion</a></Link>
-                        </div>
-                </div>
-            </div>
+                        </CardInfo>
+                        <Button 
+                            title="Direccion"
+                            type="external"
+                            link={googleMapsUrl} 
+                            bgColor="dark"
+                            hoverColor="blue"
+                        />
+                    </CardGroup>
+                    <Button 
+                        title="Mas Informacion"
+                        type="link"
+                        link={`/visit/${id}`}
+                        onClick={handleScrollToTop}
+                        bgColor="blue" 
+                        hoverColor="dark"
+                    />
+                </CardBody>
+            </ChurchCard>
     )
 }
 

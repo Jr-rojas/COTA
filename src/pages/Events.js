@@ -6,7 +6,7 @@ import EventsList from "../components/EventCard/eventList";
 export default function Events() {
     return (
         <>
-            <HeroAlt img={eventImg} page="Events" />
+            <HeroAlt img={eventImg} page="Events" hasGradient={true}/>
             <section style={{backgroundColor: "#DCDCDC" }}>
                 <EventsList />
             </section>

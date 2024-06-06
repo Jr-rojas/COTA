@@ -8,7 +8,7 @@ import welcomeImg from "../app/shared/img/welcome.jpg"
 export default function Visit(){
     return(
         <>
-            <HeroAlt img={visitImg} page="Visit"/>
+            <HeroAlt img={visitImg} page="Visit" hasGradient={true}/>
             <section className={visitStyles.smallSection}>
                 <div>
                     <h1>One Family. <span className={visitStyles.colorText}>Multiple Locations.</span></h1>
