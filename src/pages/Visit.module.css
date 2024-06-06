@@ -47,6 +47,10 @@
     margin: 10px;
 }
 
+.selectedState > :nth-child(2){
+    cursor: pointer;
+}
+
 .wte {
     background-color: #050505;
     background-image: url("../app/shared/img/b&w_Church.jpg");

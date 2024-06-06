@@ -40,6 +40,10 @@ export const ChecklistUl = styled.ul`
     overflow: hidden;
     border: solid 1px grey;
     box-shadow: 1px 1px 3px 1px grey;
+
+    & > li > input{
+        cursor: pointer;
+    }
 `
 
 export const Button = styled.button`
