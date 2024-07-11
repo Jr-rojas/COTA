@@ -99,6 +99,8 @@ export const CHURCHES = [
         city: "Fresno",
         state: "California",
         address: "1441 E Belmont Ave. Fresno, CA  93701",
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         image: FresnoImg,
         mainService: [
           {
@@ -222,6 +224,8 @@ export const CHURCHES = [
         state: "Utha",
         address: "3021 Lincoln Ave. Ogden, UT 84401",
         image: OgdenUTImg,
+        leadPastorImg:laPastor,
+        pastorName:["John Doe", "Steve Smith"],
         mainService: [
           {
             day: "Domingo",

@@ -5,7 +5,7 @@ const ChurchLocationCard = ({location}) =>{
     const { name,address, image, mainService, id } = location;
 
     const handleScrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'auto' });
     }
 
     const addressParts = address.split('.')

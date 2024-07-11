@@ -5,6 +5,10 @@ import { selectAllChurches } from '../features/churches/churchesSlice';
 export default function Footer(){
     const locations = selectAllChurches();
 
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+
     return(
         <>
             <section className={FooterStyles.section}>
@@ -14,16 +18,17 @@ export default function Footer(){
                         <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer">Domingo @ 6PM</a>
                         <br/>
                         <h5>QUICKLINKS</h5>
-                        <CustomLink to="/visit">Visit</CustomLink>
-                        <CustomLink to="/events">Events</CustomLink>
-                        <CustomLink to="/watch">Watch</CustomLink>
-                        <CustomLink to="/give">Give</CustomLink>
+                        <CustomLink to="/visit" onClick={handleScrollToTop}>Visit</CustomLink>
+                        <CustomLink to="/events" onClick={handleScrollToTop}>Events</CustomLink>
+                        <CustomLink to="/watch" onClick={handleScrollToTop}>Watch</CustomLink>
+                        <CustomLink to="/give" onClick={handleScrollToTop}>Give</CustomLink>
+                        <CustomLink to="/account">Account</CustomLink>
                     </div>
                     <div className={FooterStyles.container}>
                         <h5>LOCATIONS</h5>
                         <ul>
                             {locations.map((location) => {
-                                return (<Link to={`/visit/${location.id}`} key={location.id}className={FooterStyles.list}><li>{location.city}</li></Link>)
+                                return (<Link to={`/visit/${location.id}`} key={location.id} className={FooterStyles.list} onClick={handleScrollToTop}><li>{location.city}</li></Link>)
                                 })
                             }
                         </ul>

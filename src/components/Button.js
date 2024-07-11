@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import styles from "./Button.module.css"
 
-export default function Button({title, type, link, onClick, bgColor, hoverColor, disabled}){
+export default function Button({title, type, link, onClick, bgColor, hoverColor, disabled, style}){
     const bgClass = bgColor ? styles[`bg-${bgColor}`] : "";
     const hoverClass = hoverColor ? styles[`hover-${hoverColor}`] : "";
     const disabledClass = disabled ? styles.disabled : "";
@@ -44,6 +44,7 @@ export default function Button({title, type, link, onClick, bgColor, hoverColor,
                         className={`${styles.button} ${bgClass} ${hoverClass} ${disabledClass}`} 
                         onClick={handleClick}
                         disabled={disabled}
+                        style={style}
                     >
                         {title}
                     </button>

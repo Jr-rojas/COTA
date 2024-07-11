@@ -154,6 +154,11 @@ body {
     transition: all .25s ease;
 }
 
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
 p{
     font-weight: 500 !important;
     font-size: clamp(16px, 1.6vw, 19px);
@@ -195,6 +200,36 @@ h5{
     letter-spacing: 2pt;
     text-transform: uppercase;
     margin: 0 0 5px 0;
+}
+
+label{
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    max-width:15px;
+    height: auto;
+    margin:0 5px 0 0;
+}
+
+input[type="checkbox"]:checked{
+    accent-color: #333;
+}
+
+input{
+    margin:0;
+    padding-left: 6px;
+    width: 100%;
+    height: 36px;
+    border: #c6c6c6 solid 1px;
+}
+
+.errorMessage{
+    color: #F82626;
+    margin:0;
+    font-size: 14px;
 }
 
 hr{
