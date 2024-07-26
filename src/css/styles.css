@@ -226,12 +226,6 @@ input{
     border: #c6c6c6 solid 1px;
 }
 
-.errorMessage{
-    color: #F82626;
-    margin:0;
-    font-size: 14px;
-}
-
 hr{
     border:0;
     outline: 0;

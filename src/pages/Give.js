@@ -1,14 +1,20 @@
-import HeroAlt from "../components/HeroAlt";
-import styles from './Home.module.css';
-import { FlexCard, FlexCenter } from "../components/Flex";
-import { Container } from "../components/StyledContainer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandHoldingDollar, faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
-import image from "../app/shared/img/aposento.jpg"
+
+import HeroAlt from "../components/heroSection/HeroAlt";
+import useDocumentTitle from "../hooks/useDocumentTitle";
+import Button from "../components/button/Button";
+import { FlexCard, FlexCenter } from "../components/Flex";
+import { Container } from "../components/StyledContainer";
 import { StyledCard } from "../components/StyledCard";
-import Button from "../components/Button";
+
+import image from "../app/shared/img/aposento.jpg"
+import styles from './Home.module.css';
+
 
 export default function Give() {
+    useDocumentTitle("Give - COTA")
+
     return (
         <>
             <HeroAlt page="Give">
@@ -16,7 +22,7 @@ export default function Give() {
             <section style={{ backgroundColor: "#f8f7f4" }}>
                 <FlexCenter flexDirection="column">
                     <Container>
-                        <h2 style={{color:"black"}}>Why we give</h2>
+                        <h2 style={{ color: "black" }}>Why we give</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis est porta, dignissim nunc ut, dapibus neque. Nam sagittis tellus non nunc faucibus, a fermentum urna elementum.</p>
                         <br />
                         <p><em>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</em></p>

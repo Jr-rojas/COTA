@@ -1,5 +1,6 @@
+import Button from '../button/Button'
+
 import styles from './Hero.module.css'
-import Button from './Button'
 
 export default function Hero({ title }) {
     return (

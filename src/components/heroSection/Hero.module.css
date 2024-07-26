@@ -3,7 +3,7 @@
 }
 
 .hero{
-    background-image: url('../app/shared/img/banner.jpg');
+    background-image: url('../../app/shared/img/banner.jpg');
     background-size: cover;
     background-position: center;
     

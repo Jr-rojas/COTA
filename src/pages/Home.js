@@ -1,25 +1,29 @@
-import Hero from '../components/Hero'
-import styles from './Home.module.css'
-import fanStyles from './HomeFancy.module.css'
+import Hero from '../components/heroSection/Hero'
+import FeaturedEvents from '../layouts/FeaturedEvents'
+import { nextEvents } from '../components/eventsCard/eventsSlice'
+import Button from '../components/button/Button'
+import useDocumentTitle from '../hooks/useDocumentTitle'
+
 import image from "../app/shared/img/leadPastor.jpg"
 import youthCampImg from "../app/shared/img/youth_camp.png"
-import FeaturedEvents from '../components/FeaturedEvents'
-import { nextEvents } from '../components/EventCard/eventsSlice'
-import Button from '../components/Button'
+import styles from './Home.module.css'
+import fanStyles from './HomeFancy.module.css'
 
-export default function Home(){
+
+export default function Home() {
+    useDocumentTitle("Home - COTA")
     const upcomingEvents = nextEvents();
 
-    return(
+    return (
         <>
-            <Hero title="Bienvenidos"/>
+            <Hero title="Bienvenidos" />
 
             {/* NUESTRA HISTORIA SECTION */}
             <section className={styles.section}>
                 <div className={styles.container}>
                     <div className={styles.content}>
                         <h1 className={styles.h1}>Nuestra Historia</h1>
-                        <hr className={styles.hr}/>
+                        <hr className={styles.hr} />
                         <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <Button
                             title="Leer Mas"
@@ -30,7 +34,7 @@ export default function Home(){
                             disabled={true}
                         />
                     </div>
-                    <div className={styles.img} style={{ backgroundImage: `url(${image})` }}/>
+                    <div className={styles.img} style={{ backgroundImage: `url(${image})` }} />
                 </div>
             </section>
 
@@ -44,7 +48,7 @@ export default function Home(){
                                 <h4 className={styles.h4}>UNA FAMILIA</h4>
                                 <h1 className={fanStyles.h1}>COTA UNITED</h1>
                             </div>
-                            <hr className={fanStyles.hr}/>
+                            <hr className={fanStyles.hr} />
                             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <Button
@@ -54,7 +58,7 @@ export default function Home(){
                                 hoverColor="dark"
                                 disabled={true}
                             />
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </section>
@@ -66,11 +70,11 @@ export default function Home(){
                     <div className={styles.content}>
                         <h4>Acompañanos</h4>
                         <h1 className={styles.h1}>Proximos Eventos</h1>
-                        <hr className={styles.hr}/>
+                        <hr className={styles.hr} />
                     </div>
                     <div className='items'>
-                        {upcomingEvents.map((event) =>{
-                            return (<FeaturedEvents key={event.id} event={event}/>)
+                        {upcomingEvents.map((event) => {
+                            return (<FeaturedEvents key={event.id} event={event} />)
                         })}
                     </div>
                     <div className='buttons lg hover-dark'>
@@ -87,7 +91,7 @@ export default function Home(){
                                 <h4 className={styles.h4}>TOMA TU</h4>
                                 <h1 className={fanStyles.h1}>LLAMADO</h1>
                             </div>
-                            <hr className={fanStyles.hrR}/>
+                            <hr className={fanStyles.hrR} />
                             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <Button
@@ -103,7 +107,7 @@ export default function Home(){
                                 link="/give"
                                 hoverColor="dark"
                             />
-                        </div> 
+                        </div>
                     </div>
                     <div className={fanStyles.imgR}></div>
                 </div>
@@ -111,25 +115,25 @@ export default function Home(){
             {/* COTA KIDS & COTA YOUTH */}
             <section className={styles.sectionB}>
                 <div className={styles.container2}>
-                    <div className={styles.img2} style={{backgroundImage: `url(${youthCampImg})`}}/>
+                    <div className={styles.img2} style={{ backgroundImage: `url(${youthCampImg})` }} />
                     <div className={styles.content2}>
                         <h1 className={styles.h1}>COTA Kids & Cota Youth</h1>
-                        <hr className={styles.hr2}/>
+                        <hr className={styles.hr2} />
                         <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <Button
-                                title="Kids"
-                                type="link"
-                                link="/"
-                                hoverColor="dark"
-                                disabled={true}
-                            />
+                            title="Kids"
+                            type="link"
+                            link="/"
+                            hoverColor="dark"
+                            disabled={true}
+                        />
                         <Button
-                                title="Youth"
-                                type="link"
-                                link="/"
-                                hoverColor="dark"
-                                disabled={true}
-                            />
+                            title="Youth"
+                            type="link"
+                            link="/"
+                            hoverColor="dark"
+                            disabled={true}
+                        />
                     </div>
                 </div>
             </section>

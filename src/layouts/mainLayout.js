@@ -1,14 +1,15 @@
 import React from "react";
-import Navbar from "../Navbar";
-import Footer from "../components/Footer";
+
+import Navbar from "./Navbar";
+import Footer from "./footer/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
-const MainLayout = ({children}) => (
+const MainLayout = ({ children }) => (
     <>
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
-        <ScrollToTopButton/>
+        <Footer />
+        <ScrollToTopButton />
     </>
 );
 

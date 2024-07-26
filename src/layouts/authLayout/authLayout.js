@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import LoginForm from "../components/Forms/loginForm";
-import styles from "./Account.module.css";
+
+import styles from "./authLayout.module.css";
 
 
-export default function Account(){
+export default function AuthLayout({children, title}){
     return(
         <>
             <div className={styles.body}>
@@ -18,10 +18,10 @@ export default function Account(){
                         </Link>
                     </div>
                     <div>
-                        <h2 style={{color:"black", marginBottom:"24px", fontSize:"24px"}}>Log In</h2>
+                        <h2 style={{color:"black", marginBottom:"24px", fontSize:"24px"}}>{title}</h2>
                     </div>
                     <div style={{backgroundColor: "white"}} className={styles.formContent}>
-                        <LoginForm/>
+                        {children}
                     </div>
                 </div>
             </div>
