@@ -78,7 +78,12 @@ export default function Home() {
                         })}
                     </div>
                     <div className='buttons lg hover-dark'>
-                        <a href='/events' >Mas Eventos</a>
+                        <Button
+                                title="Mas Eventos"
+                                type="link"
+                                link="/events"
+                                hoverColor="dark"
+                            />
                     </div>
                 </div>
             </section>

@@ -1,3 +1,5 @@
+import Button from "../components/button/Button";
+
 export default function FeaturedEvents({event}){
     const {date, image, description, title} = event
 
@@ -14,7 +16,12 @@ export default function FeaturedEvents({event}){
                 <span className='overlay'>
                     <span className='title'>{title}</span>
                     {description}
-                    <span className='buttons hover-dark'><a href='/events'>Mas Detalles</a></span>
+                    <span className='buttons hover-dark'><Button
+                                title="Mas Detalles"
+                                type="link"
+                                link="/events"
+                                hoverColor="dark"
+                            /></span>
                 </span>
             </div>
         </div>
