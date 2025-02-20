@@ -70,7 +70,7 @@ export const ChurchDetails = () => {
                         </div>
                     </div>
                     <div className={styles.wrapper}>
-                        <img src={image} width="450px" alt="location of church" />
+                        <img src={image} alt="location of church" />
                     </div>
                 </FlexCenter>
             </section>

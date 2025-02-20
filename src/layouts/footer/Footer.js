@@ -17,18 +17,18 @@ export default function Footer() {
             <section className={FooterStyles.section}>
                 <div className={FooterStyles.content}>
                     <div className={FooterStyles.container}>
-                        <h5>LIVE STREAMS</h5>
+                        <h5>En Vivo</h5>
                         <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer">Domingo @ 6PM</a>
-                        <br />
-                        <h5>QUICKLINKS</h5>
-                        <CustomLink to="/visit" onClick={handleScrollToTop}>Visit</CustomLink>
-                        <CustomLink to="/events" onClick={handleScrollToTop}>Events</CustomLink>
-                        <CustomLink to="/watch" onClick={handleScrollToTop}>Watch</CustomLink>
-                        <CustomLink to="/give" onClick={handleScrollToTop}>Give</CustomLink>
+                        <br/>
+                        <h5>Navegación </h5>
+                        <CustomLink to="/visit" onClick={handleScrollToTop}>Iglesias</CustomLink>
+                        <CustomLink to="/events" onClick={handleScrollToTop}>Eventos</CustomLink>
+                        <CustomLink to="/watch" onClick={handleScrollToTop}>Medios</CustomLink>
+                        <CustomLink to="/give" onClick={handleScrollToTop}>Donar</CustomLink>
                         <CustomLink to="/logIn">Account</CustomLink>
                     </div>
                     <div className={FooterStyles.container}>
-                        <h5>LOCATIONS</h5>
+                        <h5>Iglesias</h5>
                         <ul>
                             {locations.map((location) => {
                                 return (<Link to={`/visit/${location.id}`} key={location.id} className={FooterStyles.list} onClick={handleScrollToTop}><li>{location.city}</li></Link>)
@@ -37,9 +37,9 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className={FooterStyles.container}>
-                        <h5>Stay Connected</h5>
+                        <h5>Conectate</h5>
                         <form className={FooterStyles.form}>
-                            <label for="email">Newsletter Sign up</label>
+                            <label for="email">Únete a Nuestro Boletín </label>
                             <span>
                                 <input type="email" id="email" name="email" />
                                 <input type="submit" id="submit" value="GO" />

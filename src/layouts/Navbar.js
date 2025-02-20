@@ -26,10 +26,10 @@ export default function Navbar() {
                 <FontAwesomeIcon icon={isToggler ? faTimes : faBars} size="lg"/>
             </div>
             <ul>
-                <CustomLink to="/visit" closeMenu={closeMenu}>Visit</CustomLink>
-                <CustomLink to="/events" closeMenu={closeMenu}>Events</CustomLink>
-                <CustomLink to="/watch" closeMenu={closeMenu}>Watch</CustomLink>
-                <CustomLink to="/give" closeMenu={closeMenu}>Give</CustomLink>
+                <CustomLink to="/visit" closeMenu={closeMenu}>Iglesias</CustomLink>
+                <CustomLink to="/events" closeMenu={closeMenu}>Eventos</CustomLink>
+                <CustomLink to="/watch" closeMenu={closeMenu}>Medios</CustomLink>
+                <CustomLink to="/give" closeMenu={closeMenu}>Donar</CustomLink>
             </ul>
         </nav>
     )

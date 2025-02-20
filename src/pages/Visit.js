@@ -3,7 +3,7 @@ import ChurchLocationList from "../components/churchesCard/churchesList"
 import HeroAlt from "../components/heroSection/HeroAlt"
 
 import visitImg from "../app/shared/img/visit.jpg"
-import welcomeImg from "../app/shared/img/welcome.jpg"
+import welcomeImg from "../app/shared/img/welcomeFamily.jpg"
 import visitStyles from "./Visit.module.css"
 
 
@@ -15,14 +15,14 @@ export default function Visit() {
             <HeroAlt img={visitImg} page="Visit" hasGradient={true} />
             <section className={visitStyles.smallSection}>
                 <div>
-                    <h1>One Family. <span className={visitStyles.colorText}>Multiple Locations.</span></h1>
+                    <h1>Una Familia, <span className={visitStyles.colorText}>Múltiple Ubicaciones.</span></h1>
                 </div>
             </section>
             <ChurchLocationList />
             <section className={visitStyles.wte}>
                 <div>
                     <div>
-                        <h2>What to expect</h2>
+                        <h2>Nuestra Experiencia</h2>
                         <br />
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         <br />
@@ -30,7 +30,7 @@ export default function Visit() {
                     </div>
                     <div>
                         {/* <div className={visitStyles.img}></div> */}
-                        <img src={welcomeImg} alt="Girl in a jacket" width="500" height="300" />
+                        <img src={welcomeImg} alt="Girl in a jacket" className={visitStyles.img}/>
                     </div>
                     <div className={visitStyles.blurryBackground}></div>
                 </div>
@@ -50,8 +50,7 @@ export default function Visit() {
             </section>
             <section className={visitStyles.endingWelcome}>
                 <div>
-                    <h4>Todos son Bienvenidos</h4>
-                    <h1>Un lugar para toda la familia</h1>
+                    <h4>Evento Anual</h4>
                     <div className='buttons lg la hover-dark'>
                         <a href='/' >Learn</a>
                     </div>

@@ -5,6 +5,14 @@
     z-index: 3;
 }
 
+.wrapper img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .wrapper:has(> img)::before{
     content: "";
     width: 70px;
@@ -22,7 +30,7 @@
     height: 40px;
     background-color: #ff5555;
     position: absolute;
-    bottom:9px;
-    left:430px;
+    bottom:-3%;
+    right:-3%;
     z-index: 1;
 }

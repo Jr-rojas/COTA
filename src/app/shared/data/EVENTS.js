@@ -3,7 +3,7 @@ import eventImg from "../img/youth_camp_1.png"
 export const EVENTS = [
     {
       id: 0,
-      date: "may 05, 2024",
+      date: "may 05, 2026",
       location: "Cota-Los Angeles",
       image: eventImg,
       title: "name of the event",
@@ -11,7 +11,7 @@ export const EVENTS = [
     },
     {
       id: 1,
-      date: "may 23, 2024",
+      date: "may 23, 2026",
       location: "Cota United",
       image: eventImg,
       title: "name of the event",
@@ -19,7 +19,7 @@ export const EVENTS = [
     },
     {
       id: 2,
-      date: "June 27, 2024",
+      date: "June 27, 2026",
       location: "Cota-Denver",
       image: eventImg,
       title: "name of the event",
@@ -27,7 +27,7 @@ export const EVENTS = [
     },
     {
       id: 3,
-      date: "july 27, 2024",
+      date: "july 27, 2026",
       location: "Cota-Bakersfield",
       image: eventImg,
       title: "name of the event",

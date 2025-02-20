@@ -68,7 +68,7 @@
 }
 
 .wte a {
-    color: #3C82D4;
+    color: rgb(60, 130, 212);
     cursor: pointer;
     text-decoration: none;
 }
@@ -149,7 +149,27 @@
 
 .groupSquares a{
     text-decoration: none;
-}
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    }
+
+.groupSquares a:nth-child(1) {
+    background-image: url("../app/shared/img/cotakids.jpg");
+  }
+  
+  .groupSquares a:nth-child(2) {
+    background-image: url("../app/shared/img/youthgroup.jpg");
+  }
+  
+  .groupSquares a:nth-child(3) {
+    background:linear-gradient(rgba(60, 130, 212), rgba(175, 173, 173, 0.7)); 
+  }
+  
+  .groupSquares a:nth-child(4) {
+    background-image: url("../app/shared/img/smallgroup.jpg");
+  }
 
 .square {
     height: auto;
@@ -160,18 +180,34 @@
     position: relative;
 }
 
+.square::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(0px);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  .square:hover::before {
+    filter: blur(6px);
+    opacity: 0.9;
+  }
+
 .square h3{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2pt;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px 10px 15px 10px;
+    z-index: 1;
 }
 
 .square hr{
     width: 50%;
     height: 3px;
-    background: #F82626;
+    background: rgb(248, 38, 38);
     position: absolute;
     left: 50%;
     top: 55%;
@@ -192,9 +228,10 @@
     justify-content:flex-start;
     position:relative;
     background-color: #fff;
-    background-image: url("../app/shared/img/banner.jpg");
-    background-position:center;
+    background-image: url("../app/shared/img/ensanchaLaVision.jpg");
+    background-position:top;
     background-size:cover;
+    min-height: 300px;
 }
 
 .endingWelcome > div{
@@ -203,28 +240,15 @@
     max-width: 1540px;
 }
 
-.endingWelcome div h1{
-    line-height: 35px;
-    font-size: 45px;
-    font-weight: 600 !important;
-    margin: 0 auto 30px auto;
-    position: relative;
-    color: #fff;
-}
-
-.endingWelcome div h1::after{
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: #3C82D4;
-    position: absolute;
-    left: -30%;
-    top: 40px;
-}
-
 .endingWelcome div h4{
     color: #fff ;
     font-size: 30px;
+}
+
+.img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
