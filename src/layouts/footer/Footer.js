@@ -2,7 +2,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 import { selectAllChurches } from '../../components/churchesCard/churchesSlice';
 
-import FooterStyles from './Footer.module.css'
+import FooterStyles from './Footer.module.scss'
 
 
 export default function Footer() {

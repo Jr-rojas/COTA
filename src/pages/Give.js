@@ -9,7 +9,7 @@ import { Container } from "../components/StyledContainer";
 import { StyledCard } from "../components/StyledCard";
 
 import image from "../app/shared/img/aposento.jpg"
-import styles from './Home.module.css';
+import styles from './Home.module.scss';
 
 
 export default function Give() {

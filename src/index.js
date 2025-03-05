@@ -8,8 +8,7 @@ import App from './App';
 
 import 'bootstrap-social/bootstrap-social.css';
 import 'font-awesome/css/font-awesome.css';
-import "./css/styles.css";
-import './index.css';
+import './styles/main.scss'
 
 
 const container = document.getElementById('root');

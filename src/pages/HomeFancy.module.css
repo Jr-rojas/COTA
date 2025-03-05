@@ -36,7 +36,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 7%;
+    padding: 0 4%;
     position: relative;
     z-index: 2;
 }
@@ -88,14 +88,14 @@
     right: 50%;
 }
 
-.h1{
+/* .h1{
     font-size: 60px;
     line-height: 60px;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: 'Poppins';
     font-weight: 700;
-}
+} */
 
 .hr{
     width: 100%;
@@ -152,7 +152,9 @@
 }
 
 .img{
-    background: url("../../public/cota-oldLogo.jpg") center center / cover no-repeat;
+    background: url("../app/shared/img/ensanchaLaVision.jpg");
+    background-size:cover;
+    background-position:center;
     visibility: visible;
     opacity: 1;
 

@@ -7,7 +7,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Button from "../button/Button";
 import accountValidate, { validatePassword } from "../../validation/signUpValidation";
 
-import "../../css/error.css";
+import "../../styles/error.scss";
 
 function SignUpForm() {
     const [firstName, setfirstName] = useState('')

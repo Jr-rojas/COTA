@@ -19,7 +19,7 @@ const ChurchLocationCard = ({ location }) => {
                 <CardTitle>{name}</CardTitle>
                 <CardGroup>
                     <CardInfo>
-                        <p><strong>Address</strong>
+                        <p><strong className="fw-bold">Address</strong>
                             <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
                                 <br />{addressParts[0]}<br />{addressParts[1]}
                             </a>
@@ -27,7 +27,7 @@ const ChurchLocationCard = ({ location }) => {
                         <p>
                             {mainService.map((service) => (
                                 <span>
-                                    <strong>{service.day}</strong> {service.time}<br />
+                                    <strong className="fw-bold">{service.day}</strong> {service.time}<br />
                                 </span>
                             ))}
                         </p>

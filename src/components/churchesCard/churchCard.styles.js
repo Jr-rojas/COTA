@@ -23,6 +23,7 @@ export const CardBody = styled.div`
 
 export const CardTitle = styled.h3`
     font-size: 23px;
+    font-weight: 700;
     margin-top: 5px;
     letter-spacing: 1.5pt;
 
@@ -45,7 +46,8 @@ export const CardGroup = styled.div`
 `
 
 export const CardInfo = styled.div`
-    padding: 0 8px;
+    margin: 10px 0 0 0;
+    padding: 10px 8px 0 8px;
 
     & > :first-child{
         margin-bottom: 30px;
