@@ -38,9 +38,16 @@ const EventsList = () => {
             setSelectedLocations(selectedLocations.filter(loc => loc !== location));
         }
     };
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+      // Filter events to only show future events
+      const futureEvents = allEvents.filter(event => new Date(event.date) >= today);
+
     // filtered events by location
-    const filteredEvents = selectedLocations.length === 0 ? allEvents 
-                            : allEvents.filter(event => selectedLocations.includes(event.location))
+    const filteredEvents = selectedLocations.length === 0 ? futureEvents
+                            : futureEvents.filter(event => selectedLocations.includes(event.location))
 
     return(
         <>
@@ -58,13 +65,17 @@ const EventsList = () => {
                 })}
                 </ChecklistUl>
             </DropdownChecklist>
-            <GridLayout>
-                {filteredEvents.map((event) => {
-                    return(
-                        <EventCard key={event.id} event={event}/>
-                    )
-                })}
-            </GridLayout>
+            {filteredEvents.length === 0 ? (
+                <div className="container-lg p-5 text-center">
+                    <h2 className="fw-medium">📅 ¡Estate pendiente de nuestros próximos eventos!</h2>
+                </div>
+            ) : (
+                <GridLayout>
+                    {filteredEvents.map((event) => (
+                        <EventCard key={event.id} event={event} />
+                    ))}
+                </GridLayout>
+            )}
         </>
     )
 }

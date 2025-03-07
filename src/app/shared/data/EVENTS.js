@@ -1,7 +1,7 @@
 import eventImg from "../img/youth_camp_1.png"
 
 export const EVENTS = [
-    {
+    /* {
       id: 0,
       date: "may 05, 2024",
       location: "Cota-Los Angeles",
@@ -32,5 +32,5 @@ export const EVENTS = [
       image: eventImg,
       title: "name of the event",
       description: "Consectetur adipiscing elit. Dapibus neque. Nam sagittis tellus non nunc faucibus, a fermentum urna elementum."
-    }
+    } */
 ];

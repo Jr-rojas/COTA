@@ -19,4 +19,8 @@ code {
     border-radius: 30%;
     display: block;
     margin: auto;
+
+    @media (max-width: 768px) {
+      flex-basis: 60%;
+    }
 }

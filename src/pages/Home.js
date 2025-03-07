@@ -128,12 +128,12 @@ export default function Home() {
                     <div className={fanStyles.imgR}></div>
                 </div>
             </section> */}
-            {/* COTA KIDS & COTA YOUTH */}
+            {/* Unete con Nosostros */}
             <section className={styles.sectionB}>
                 <div className={styles.container2}>
                     <div className={styles.img2} style={{ backgroundImage: `url(${leadPastor})` }} />
                     <div className={styles.content2}>
-                        <h4>Unete a nosostros</h4>
+                        <h4>Unete con nosostros</h4>
                         <h1 className="display-3 fw-bold lh-1">En Linea</h1>
                         <hr className={styles.hr2} />
                         <p className={styles.p}>Te invitamos a ser parte de nuestras transmisiones en vivo desde la iglesia central en Los Ángeles, CA, con nuestro Apóstol Erasmo. No te pierdas un tiempo de palabra, adoración y transformación en la presencia de Dios.
