@@ -14,14 +14,14 @@ import styles from "./Watch.module.css"
 
 
 export default function Watch() {
-    useDocumentTitle("Watch - COTA")
+    useDocumentTitle("Medios - COTA")
 
     return (
         <>
-            <HeroAlt page="Watch" img={watchImg} hasGradient={true}
-                children={<h3 style={{ color: "#e9eaec", margin: "0" }}>Join us live every Sunday @ 6:00PM &  <br /> Wednesday @ 6:00PM from our central church.</h3>}
+            <HeroAlt page="Medios" img={watchImg} hasGradient={true}
+                children={<h3 style={{ color: "#e9eaec", margin: "0" }}>Unete con nosostros cada Domingo @ 6:00PM &  <br /> Miercoles @ 6:00PM de nuestra iglesia central.</h3>}
                 button={<Button
-                    title="Live"
+                    title="En Vivo"
                     type="external"
                     link="https://www.facebook.com/churchoftheamericas"
                     bgColor="blue"

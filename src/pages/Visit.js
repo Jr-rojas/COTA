@@ -8,7 +8,7 @@ import visitStyles from "./Visit.module.css"
 
 
 export default function Visit() {
-    useDocumentTitle("Visit - COTA")
+    useDocumentTitle("Iglesias - COTA")
 
     return (
         <>

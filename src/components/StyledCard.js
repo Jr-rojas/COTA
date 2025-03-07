@@ -1,16 +1,21 @@
 import styled from "styled-components"
 
 const Card = styled.div`
-    background-color: white;
+    background-color: light;
     display: inline-grid;
     grid-template-columns:1fr 2fr;
     gap: 5px;
     align-items: center;
     justify-items: center;
-    border: 0 solid black;
+    border: 2px solid black;
     width: 370px;
     border-radius: 18px;
     padding-right: 11px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 `
 
 const Title = styled.h3`
@@ -27,7 +32,7 @@ const Description = styled.p`
 `
 
 export const StyledCard = ({children, title, description}) => {
-    const isAddressCard = title === "Mail in Gift";
+    const isAddressCard = title === "Envias por Correo";
 
     return (
         <Card>
@@ -37,9 +42,11 @@ export const StyledCard = ({children, title, description}) => {
                 <Description isAddress={isAddressCard}>
                     {isAddressCard ? (
                         <>
-                            John Doe<br />
-                            123 Main Street<br />
-                            Anytown, USA
+                            <strong>Church of the Americas</strong>
+                            <br />
+                            6408 Whittier Blvd.
+                            <br />
+                            Los Angeles, CA 90022
                         </>
                     ) : (
                         description

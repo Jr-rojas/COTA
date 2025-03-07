@@ -13,12 +13,12 @@ import styles from './Home.module.scss';
 
 
 export default function Give() {
-    useDocumentTitle("Give - COTA")
+    useDocumentTitle("Siembra - COTA")
 
     return (
         <>
            
-            <section style={{ backgroundColor: "#f8f7f4" }}>
+            <section className='bg-light'>
                 <FlexCenter flexDirection="column">
                     <Container>
                         <h1 className='mb-3'>Por qué sembramos</h1>
@@ -52,25 +52,29 @@ export default function Give() {
                     <div className={styles.img} style={{ backgroundImage: `url(${image})` }} />
                 </div>
             </section>
-            <section style={{ backgroundColor: "#f8f7f4" }}>
+            <section className='bg-light'>
                 <Container>
                     <h1>Formas de Sembrar</h1>
                     <FlexCard margin={"40px 0 0 0"}>
-                        <StyledCard
-                            children={<FontAwesomeIcon icon={faHandHoldingDollar} size="2xl" />}
-                            title="Sembrar en persona"
-                            description="Visítenos en nuestra sede para hacer su donación en persona."
-                        />
+                        <a href="/iglesias">
+                            <StyledCard
+                                children={<FontAwesomeIcon icon={faHandHoldingDollar} size="2xl" />}
+                                title="Sembrar en persona"
+                                description="Visítenos en una de nuestras iglesias."
+                            />
+                        </a>
                         <StyledCard
                             children={<FontAwesomeIcon icon={faEnvelope} size="2xl" />}
                             title="Envias por Correo"
-                            description="Por favor, haga los cheques a nombre de Iglesia de las Américas y asegúrese de incluir su nombre y dirección para recibir un recibo fiscal."
+                            description="Church of the Americas"
                         />
-                        <StyledCard
-                            children={<FontAwesomeIcon icon={faMobileScreen} size="2xl" />}
-                            title="Siembra en Linea"
-                            description="Haga clic en el botón de abajo para donar.¡Su generosidad hace una diferencia!"
-                        />
+                        <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=NLGLEFRCJNSB6&source=qr" target="_blank" rel="noopener noreferrer" >
+                            <StyledCard
+                                children={<FontAwesomeIcon icon={faMobileScreen} size="2xl" />}
+                                title="Siembra en Linea"
+                                description="Haga clic para donar.¡Su generosidad hace una diferencia!"
+                            />
+                        </a>
                     </FlexCard>
                 </Container>
             </section>

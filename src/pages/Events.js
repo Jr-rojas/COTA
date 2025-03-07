@@ -5,7 +5,7 @@ import useDocumentTitle from "../hooks/useDocumentTitle";
 
 
 export default function Events() {
-    useDocumentTitle("Event - COTA")
+    useDocumentTitle("Eventos - COTA")
 
     return (
         <>
