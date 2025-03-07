@@ -31,7 +31,7 @@ export default function Footer() {
                         <h5>Iglesias</h5>
                         <ul>
                             {locations.map((location) => {
-                                return (<Link to={`/visit/${location.id}`} key={location.id} className={FooterStyles.list} onClick={handleScrollToTop}><li>{location.city}</li></Link>)
+                                return (<Link to={`/iglesias/${location.churchName}`} key={location.id} className={FooterStyles.list} onClick={handleScrollToTop}><li>{location.city}</li></Link>)
                             })
                             }
                         </ul>
