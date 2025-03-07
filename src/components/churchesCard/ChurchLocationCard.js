@@ -1,8 +1,9 @@
 import { ChurchCard, CardImage, CardBody, CardTitle, CardGroup, CardInfo } from "./churchCard.styles";
 import Button from "../button/Button"
+import { formatChurchName } from "../../utils/formatters";
 
 const ChurchLocationCard = ({ location }) => {
-    const { name, address, image, mainService, id } = location;
+    const { churchName, address, image, mainService, id } = location;
 
     const handleScrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'auto' });
@@ -14,9 +15,9 @@ const ChurchLocationCard = ({ location }) => {
 
     return (
         <ChurchCard>
-            <CardImage src={image} alt="church location city"></CardImage>
+            <CardImage src={`/shared/images/locations/${image}`} alt="church location city"></CardImage>
             <CardBody>
-                <CardTitle>{name}</CardTitle>
+                <CardTitle>{formatChurchName(churchName)}</CardTitle>
                 <CardGroup>
                     <CardInfo>
                         <p><strong className="fw-bold">Address</strong>
@@ -43,7 +44,7 @@ const ChurchLocationCard = ({ location }) => {
                 <Button
                     title="Mas Informacion"
                     type="link"
-                    link={`/visit/${id}`}
+                    link={`/iglesias/${churchName}`}
                     onClick={handleScrollToTop}
                     bgColor="blue"
                     hoverColor="dark"

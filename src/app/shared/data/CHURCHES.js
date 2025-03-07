@@ -1,31 +1,20 @@
-import BakersfieldImg from '../img/bakersfield-CA.jpg';
-import LosAngelesImg from '../img/Los_Angeles-CA.jpg';
-import LasVegasImg from '../img/Las_Vegas-NV.jpg';
-import DenverImg from '../img/Denver-CO.jpg';
-import FresnoImg from '../img/Fresno.jpg';
-import CoachellaImg from '../img/Coachella.jpg';
-import AlbuquerqueImg from '../img/Albuquerque.jpg';
-import GlassboroImg from '../img/glassboro.jpeg';
-import PhoenixImg from '../img/phoenix.jpg';
-import RenoImg from '../img/reno.jpg';
-import ThousandOaksImg from '../img/ThousandOaks.png';
-import OgdenUTImg from '../img/ogden.webp';
-import WaukeganILImg from '../img/waukegan.jpg';
-import SacramentoImg from '../img/sacramento.jpg';
-import SeattleImg from '../img/seattle_wa.jpg'
-import laPastor from '../img/leadPastor.jpg'
-
 
 export const CHURCHES = [
     {
       id: 0,
-      name: "COTA - Los Angeles",
+      churchName: "COTA-Los-Angeles",
       city: "Los Angeles",
       state: "California",
       address: "6408 Whittier Blvd. Los Angeles, CA 90022",
-      image: LosAngelesImg,
-      leadPastorImg:laPastor,
-      pastorName:["John Doe", "Steve Smith"],
+      image: "cota-los-angeles.jpg",
+      leadPastor: {
+        name: ["Erasmo", "Elvira Solis"], 
+        image: "PastorErasmo.jpg"
+      },
+      coPastor: {
+        name: ["Noe", "Aloina Perez"], 
+        image: "PastorNoe.jpeg"
+      },
       mainService: [
         {
           day: "Domingo",
@@ -39,13 +28,19 @@ export const CHURCHES = [
     },
     {
         id:1,
-        name: "COTA - Bakersfield",
+        churchName: "COTA-Bakersfield",
         city: "Bakersfield",
         state: "California",
         address: "1030 Niles St. Bakersfield, CA 93305",
-        image: BakersfieldImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-bakersfield.jpg",
+        leadPastor: {
+          name: ["Joran", "Elizabeth Ortega"], 
+          image: "PastorJoran.jpeg"
+        },
+        coPastor: {
+          name: ["Ociel", "Kenia Ortega"], 
+          image:"PastorOciel.jpg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -59,13 +54,15 @@ export const CHURCHES = [
       },
       {
         id: 2,
-        name: "COTA - Las Vegas",
+        churchName: "COTA-Las-Vegas",
         city: "Las Vegas",
         state: "Nevada",
         address: "15 North Mojave Rd. Las Vegas, NV 89101",
-        image: LasVegasImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-las-vegas.jpg",
+        leadPastor: {
+          name: ["Samuel", "Elizabeth De La Rosa"], 
+          image: "PastorSamuel.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -79,13 +76,15 @@ export const CHURCHES = [
       },
       {
         id: 3,
-        name: "COTA - Denver",
+        churchName: "COTA-Denver",
         city: "Denver",
         state: "Colorado",
         address: "3870 Niagara St. Denver, CO 80207",
-        image: DenverImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-denver.jpg",
+        leadPastor: {
+          name: ["Gerardo", "Edith Ortega"], 
+          image: "PastorGerardo.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -95,13 +94,15 @@ export const CHURCHES = [
       },
       {
         id: 4,
-        name: "COTA - Fresno",
+        churchName: "COTA-Fresno",
         city: "Fresno",
         state: "California",
         address: "1441 E Belmont Ave. Fresno, CA  93701",
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
-        image: FresnoImg,
+        image: "cota-fresno.jpg",
+        leadPastor: {
+          name: ["Porfirio", "Sarah Dominguez"], 
+          image: "PastorPorfirio.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -115,13 +116,19 @@ export const CHURCHES = [
       },
       {
         id: 5,
-        name: "COTA - Coachella",
+        churchName: "COTA-Coachella",
         city: "Coachella",
         state: "California",
         address: "53891 Amethyst Ct. Coachella, CA  92236",
-        image: CoachellaImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-coachella.jpg",
+        leadPastor: {
+          name: ["Werclyn", "Oralia Aguilar"], 
+          image: "PastorWerclyn.jpeg"
+        },
+        coPastor: {
+          name: ["Werclyn Jr. Aguilar"], 
+          image:"PastorWerclynJr.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -135,13 +142,15 @@ export const CHURCHES = [
       },
       {
         id: 6,
-        name: "COTA - Albuquerque",
+        churchName: "COTA-Albuquerque",
         city: "Albuquerque",
         state: "New Mexico",
         address: "3717 Fourth St NW. Albuquerque, NM  87107",
-        image: AlbuquerqueImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-Albuquerque.jpg",
+        leadPastor: {
+          name: ["Leoncio", "Aracely Solis"], 
+          image: "PastorLeoncio.jpg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -155,29 +164,33 @@ export const CHURCHES = [
       },
       {
         id: 7,
-        name: "COTA - Glassboro NJ",
+        churchName: "COTA-Glassboro-NJ",
         city: "Glassboro",
         state: "New Jersey",
         address: "275 E High St. Glassboro, NJ 08028",
-        image: GlassboroImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-glassboro.jpeg",
+        leadPastor: {
+          name: ["Fidel Solis"], 
+          image: "PastorFidelJr.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
-            time: "10:00 AM"
+            time: "11:00 AM"
           }
         ]
       },
       {
         id: 8,
-        name: "COTA - Phoenix",
+        churchName: "COTA-Phoenix",
         city: "Phoenix",
         state: "Arizona",
         address: "3106 N 35th Ave Unit 1. Phoenix, AZ  85019",
-        image: PhoenixImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-phoenix.jpg",
+        leadPastor: {
+          name: ["Fidel", "Karina Solis"], 
+          image: "PastorFidel.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -187,13 +200,15 @@ export const CHURCHES = [
       },
       {
         id: 9,
-        name: "COTA - Reno",
+        churchName: "COTA-Reno",
         city: "Reno",
         state: "Nevada",
         address: "2660 Wrondel Way. Reno, NV  89502",
-        image: RenoImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-reno.jpg",
+        leadPastor: {
+          name: ["Eliel", "Delfina Solis"], 
+          image: "PastorEliel.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -203,13 +218,15 @@ export const CHURCHES = [
       },
       {
         id: 10,
-        name: "COTA - Thousand Oaks",
+        churchName: "COTA-Thousand-Oaks",
         city: "Thousand Oaks",
         state: "California",
         address: "TBA",
-        image: ThousandOaksImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-thousand-oaks.png",
+        leadPastor: {
+          name: ["Agustin Espindola"], 
+          image: "PastorAgustin.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -219,13 +236,15 @@ export const CHURCHES = [
       },
       {
         id: 11,
-        name: "COTA - Ogden UT",
+        churchName: "COTA-Ogden-UT",
         city: "Ogden",
         state: "Utha",
         address: "3021 Lincoln Ave. Ogden, UT 84401",
-        image: OgdenUTImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-ogden.webp",
+        leadPastor: {
+          name: ["Alvaro Rojas"], 
+          image: "PastorAlvaro.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -239,13 +258,15 @@ export const CHURCHES = [
       },
       {
         id: 12,
-        name: "COTA - Waukegan IL",
+        churchName: "COTA-Waukegan-IL",
         city: "Waukegan",
         state: "Illinois",
         address: "900 S Lincoln Ave. Waukegan, IL  60085",
-        image: WaukeganILImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-waukegan.jpg",
+        leadPastor: {
+          name: ["Rodolfo", "Becky Alvarez"], 
+          image: "PastorWerclyn.jpeg"
+        },
         mainService: [
           {
             day: "Domingo",
@@ -259,13 +280,15 @@ export const CHURCHES = [
       },
       {
         id: 13,
-        name: "COTA - Sacramento",
+        churchName: "COTA-Sacramento",
         city: "Sacramento",
         state: "California",
         address: "TBA",
-        image: SacramentoImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-sacramento.jpg",
+        leadPastor: {
+          name: ["Meliton", "Lizbeth Perez"], 
+          image: "PastorMeliton.jpeg"
+        },
         mainService: [
           {
             day: "TBA",
@@ -275,17 +298,23 @@ export const CHURCHES = [
       },
       {
         id: 14,
-        name: "COTA - Seattle",
+        churchName: "COTA-Seattle",
         city: "Seattle",
         state: "Washinton",
         address: "TBA",
-        image: SeattleImg,
-        leadPastorImg:laPastor,
-        pastorName:["John Doe", "Steve Smith"],
+        image: "cota-seattle.jpg",
+        leadPastor: {
+          name: ["Jersain", "Angeles Rojas"], 
+          image: "PastorJersain.jpeg"
+        },
         mainService: [
           {
-            day: "TBA",
-            time: ""
+            day: "Domingo",
+            time: "7:00 PM"
+          },
+          {
+            day: "Miercoles",
+            time: "7:00 PM"
           }
         ]
       }

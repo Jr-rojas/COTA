@@ -137,11 +137,15 @@ export default function Home() {
                         <h1 className="display-3 fw-bold lh-1">En Linea</h1>
                         <hr className={styles.hr2} />
                         <p className={styles.p}>Te invitamos a ser parte de nuestras transmisiones en vivo desde la iglesia central en Los Ángeles, CA, con nuestro Apóstol Erasmo. No te pierdas un tiempo de palabra, adoración y transformación en la presencia de Dios.
-                        <br/><br/><strong className='fw-bold'>📺 Conéctate y experimenta el mover de Dios en vivo.</strong></p>
+                        <br/>
+                        <strong>📅 Horarios de servicio:</strong>
+                        <br/>📍 Miércoles a las 6:00 PM (Hora del Pacífico) 
+                        <br/>📍 Domingo a las 10:00 AM (Hora del Pacífico)
+                        <br/><strong>📺 Conéctate y experimenta el mover de Dios en vivo.</strong></p>
                         <Button
-                            title="Kids"
-                            type="link"
-                            link="/"
+                            title="En Vivo"
+                            type="external"
+                            link="https://www.facebook.com/churchoftheamericas"
                             hoverColor="dark"
                         />
                     </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
+import { formatChurchName } from '../../utils/formatters';
+import Button from '../../components/button/Button';
 import { selectAllChurches } from "../../components/churchesCard/churchesSlice";
 import HeroAlt from '../../components/heroSection/HeroAlt';
 import { FlexCenter } from '../../components/Flex';
@@ -11,18 +13,23 @@ import styles from './ChurchDetails.module.css'
 
 
 export const ChurchDetails = () => {
-    const { id } = useParams();
+    const { churchName } = useParams();
     const churches = useSelector(selectAllChurches);
-    const location = churches.find(church => church.id === parseInt(id));
+    const formattedName = churchName.toLowerCase();
+    const location = churches.find(church => church.churchName.toLowerCase() === formattedName);
+
 
     if (!location) {
         return <div>Church not found</div>;
     }
 
-    const { name, address, image, leadPastorImg, pastorName, mainService } = location
+    const { churchName: name, address, image, leadPastor, coPastor, mainService } = location
 
-    const firstPastor = pastorName[0]
-    const secondPastor = pastorName[1]
+    const firstPastor = leadPastor.name[0]
+    const secondPastor = leadPastor.name[1]
+
+    const coFirstPastor = coPastor?.name[0]
+    const coSecondPastor = coPastor?.name[1]
 
     const addressSplit = address.split(".")
     const street = addressSplit[0]
@@ -31,10 +38,10 @@ export const ChurchDetails = () => {
 
     return (
         <>
-            <HeroAlt img={image} page={name} />
+            <HeroAlt img={`/shared/images/locations/${image}`} page={formatChurchName(name)} />
             <section className={homeStyles.sectionB}>
                 <div className={homeStyles.container2}>
-                    <div className={homeStyles.img2} style={{ backgroundImage: `url(${leadPastorImg})` }} />
+                    <div className={`${homeStyles.img2} ovalImage`} style={{ backgroundImage: `url(/shared/images/pastors/${leadPastor.image})`}} />
                     <div className={homeStyles.content2}>
                         <h1 className={homeStyles.h1}>Nuestros Pastores</h1>
                         <hr className={homeStyles.hr2} />
@@ -42,11 +49,26 @@ export const ChurchDetails = () => {
                     </div>
                 </div>
             </section>
+            {coPastor && (
+                <section className={homeStyles.sectionB}>
+                    <div className={homeStyles.container2}>
+                        <div className={`${homeStyles.img2} ovalImage`} style={{ backgroundImage: `url(/shared/images/pastors/${coPastor.image})` }} />
+                        <div className={homeStyles.content2}>
+                            <h1 className={homeStyles.h1}>Nuestros Co-Pastores</h1>
+                            <hr className={homeStyles.hr2} />
+                            <p className={homeStyles.p}>
+                                <strong>{coFirstPastor}</strong> & <strong>{coSecondPastor}</strong> apoyan la visión de la iglesia y sirven con amor a la congregación.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            )}
+
             <section style={{ backgroundColor: "#f8f7f4", padding: "30px 10px" }}>
                 <FlexCenter maxWidth={"1200px"} justifyContent={"space-around"} flexWrap={"wrap"} style={{ margin: "auto" }}>
                     <div className={styles.wrapper}>
                         <div>
-                            <h2 style={{ color: "black" }}>Service Times</h2>
+                            <h2>Service Times</h2>
                             <ul>
                                 {mainService.map((service) => {
                                     return (
@@ -58,19 +80,24 @@ export const ChurchDetails = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 style={{ color: "black" }}>Address</h2>
+                            <h2 className='mt-4'>Address</h2>
                             <p>
                                 {street}
                                 <br />
                                 {cityState}
                             </p>
-                            <div className='buttons hover-dark'>
-                                <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer">direccion</a>
-                            </div>
+                            <Button
+                                title="Direccion"
+                                type="external"
+                                link={googleMapsUrl}
+                                bgColor="blue"
+                                hoverColor="dark"
+                                target="_blank" rel="noopener noreferrer"
+                            />
                         </div>
                     </div>
                     <div className={styles.wrapper}>
-                        <img src={image} alt="location of church" />
+                        <img src={`/shared/images/locations/${image}`} alt="location of church" />
                     </div>
                 </FlexCenter>
             </section>

@@ -17,22 +17,18 @@ export default function Give() {
 
     return (
         <>
-            <HeroAlt page="Give">
-            </HeroAlt>
+           
             <section style={{ backgroundColor: "#f8f7f4" }}>
                 <FlexCenter flexDirection="column">
                     <Container>
-                        <h2 style={{ color: "black" }}>Why we give</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis est porta, dignissim nunc ut, dapibus neque. Nam sagittis tellus non nunc faucibus, a fermentum urna elementum.</p>
-                        <br />
-                        <p><em>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</em></p>
+                        <h1 className='mb-3'>Por qué sembramos</h1>
+                        <p>En Church of the Americas, creemos en el poder de la siembra y en la importancia de dar con un corazón generoso. <strong><em>No podemos cosechar lo que no hemos sembrado; si no te gusta tu cosecha, cambia tu siembra</em></strong>. Así como en la vida espiritual, en nuestra comunidad y servicio, todo lo que ofrecemos—tiempo, recursos, amor y compasión—es una semilla que Dios hace crecer. Al dar con fe y propósito, sembramos un futuro de bendición, no solo para nosotros, sino para quienes nos rodean.</p>
                         <Button
-                            type="externa;"
-                            title="Give Online"
-                            link="/give"
+                            type="external"
+                            title="Siembra En Linea"
+                            link="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=NLGLEFRCJNSB6&source=qr"
                             bgColor="blue"
                             hoverColor="dark"
-                            disabled={true}
                         />
                     </Container>
                 </FlexCenter>
@@ -40,17 +36,17 @@ export default function Give() {
             <section className={styles.section}>
                 <div className={styles.container}>
                     <div className={styles.content}>
-                        <h4 className={styles.h4}>GIVE TO THE VISION</h4>
+                        <h4 className={styles.h4}>Siembra a la Vision</h4>
                         <h1 className={styles.h1}>Aposento Alto</h1>
                         <hr className={styles.hr} />
-                        <p className={styles.p}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p className={styles.p}>El Aposento Alto es un lugar apartado, adquirido por el ministerio con la visión de ser el hogar para nuestros eventos como iglesia y un refugio de oración donde cada miembro puede acercarse a Dios en un ambiente de paz. Si este lugar ha sido de bendición para ti o si deseas ser parte de su crecimiento, te invitamos a sembrar en esta obra para que continúe siendo un espacio de encuentro con la presencia de Dios.</p><br/>
+                        <p>¡Únete a nosotros en este proyecto de fe y siembra hoy mismo! 🌱</p>
                         <Button
                             type="external"
-                            title="Donate"
-                            link="/give"
+                            title="Siembra"
+                            link="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=NLGLEFRCJNSB6&source=qr"
                             bgColor="blue"
                             hoverColor="light"
-                            disabled={true}
                         />
                     </div>
                     <div className={styles.img} style={{ backgroundImage: `url(${image})` }} />
@@ -58,22 +54,22 @@ export default function Give() {
             </section>
             <section style={{ backgroundColor: "#f8f7f4" }}>
                 <Container>
-                    <h1>Other ways to give</h1>
+                    <h1>Formas de Sembrar</h1>
                     <FlexCard margin={"40px 0 0 0"}>
                         <StyledCard
                             children={<FontAwesomeIcon icon={faHandHoldingDollar} size="2xl" />}
-                            title="Give in person"
-                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+                            title="Sembrar en persona"
+                            description="Visítenos en nuestra sede para hacer su donación en persona."
                         />
                         <StyledCard
                             children={<FontAwesomeIcon icon={faEnvelope} size="2xl" />}
-                            title="Mail in Gift"
-                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+                            title="Envias por Correo"
+                            description="Por favor, haga los cheques a nombre de Iglesia de las Américas y asegúrese de incluir su nombre y dirección para recibir un recibo fiscal."
                         />
                         <StyledCard
                             children={<FontAwesomeIcon icon={faMobileScreen} size="2xl" />}
-                            title="Give online"
-                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+                            title="Siembra en Linea"
+                            description="Haga clic en el botón de abajo para donar.¡Su generosidad hace una diferencia!"
                         />
                     </FlexCard>
                 </Container>

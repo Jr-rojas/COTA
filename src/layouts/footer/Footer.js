@@ -21,10 +21,10 @@ export default function Footer() {
                         <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer">Domingo @ 6PM</a>
                         <br/>
                         <h5>Navegación </h5>
-                        <CustomLink to="/visit" onClick={handleScrollToTop}>Iglesias</CustomLink>
-                        <CustomLink to="/events" onClick={handleScrollToTop}>Eventos</CustomLink>
-                        <CustomLink to="/watch" onClick={handleScrollToTop}>Medios</CustomLink>
-                        <CustomLink to="/give" onClick={handleScrollToTop}>Donar</CustomLink>
+                        <CustomLink to="/iglesias" onClick={handleScrollToTop}>Iglesias</CustomLink>
+                        <CustomLink to="/eventos" onClick={handleScrollToTop}>Eventos</CustomLink>
+                        <CustomLink to="/medios" onClick={handleScrollToTop}>Medios</CustomLink>
+                        <CustomLink to="/siembra" onClick={handleScrollToTop}>Donar</CustomLink>
                         <CustomLink to="/logIn">Account</CustomLink>
                     </div>
                     <div className={FooterStyles.container}>
