@@ -9,7 +9,7 @@ export default function Events() {
 
     return (
         <>
-            <HeroAlt img={eventImg} page="Events" hasGradient={true} />
+            <HeroAlt img={eventImg} page="Eventos" hasGradient={true} />
             <section style={{ backgroundColor: "#DCDCDC" }}>
                 <EventsList />
             </section>

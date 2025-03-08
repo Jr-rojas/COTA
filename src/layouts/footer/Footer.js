@@ -24,7 +24,7 @@ export default function Footer() {
                         <CustomLink to="/iglesias" onClick={handleScrollToTop}>Iglesias</CustomLink>
                         <CustomLink to="/eventos" onClick={handleScrollToTop}>Eventos</CustomLink>
                         <CustomLink to="/medios" onClick={handleScrollToTop}>Medios</CustomLink>
-                        <CustomLink to="/siembra" onClick={handleScrollToTop}>Donar</CustomLink>
+                        <CustomLink to="/siembra" onClick={handleScrollToTop}>Siembra</CustomLink>
                         {/* <CustomLink to="/logIn">Account</CustomLink> */}
                     </div>
                     <div className={FooterStyles.container}>
