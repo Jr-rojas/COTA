@@ -94,16 +94,16 @@ h5 ~ li:hover,
         }
 
         input[type="submit"]{
-            width: 40px;
-            height: 22px;
-            font-weight: 700;
-            color: aliceblue;
+            width: auto;
+            height: 36px;
+            font-weight: 600;
             border-radius: 0;
-            border: 0;
+            border: 0 solid;
             background-color: #3C82D4;
+            color: white;
 
             &:hover{
-                color: black;
+               background-color: #717171;
                 cursor: pointer;
             }
         }

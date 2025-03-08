@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandHoldingDollar, faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 
-import HeroAlt from "../components/heroSection/HeroAlt";
 import useDocumentTitle from "../hooks/useDocumentTitle";
 import Button from "../components/button/Button";
 import { FlexCard, FlexCenter } from "../components/Flex";

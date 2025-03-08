@@ -45,7 +45,8 @@ export const ChurchDetails = () => {
                     <div className={homeStyles.content2}>
                         <h1 className={homeStyles.h1}>Nuestros Pastores</h1>
                         <hr className={homeStyles.hr2} />
-                        <p className={homeStyles.p}><strong>{firstPastor}</strong> & <strong>{secondPastor}</strong> son siervos dedicados al llamado de Dios, guiando con amor y sabiduría a nuestra congregación. Con un corazón por la comunidad y una pasión por la enseñanza de la Palabra, trabajan incansablemente para fortalecer la fe y el crecimiento espiritual de cada miembro. </p>
+                        <p className={homeStyles.p}><strong>{firstPastor}</strong> 
+                        {secondPastor && <> & <strong>{secondPastor}</strong></>} son siervos dedicados al llamado de Dios, guiando con amor y sabiduría a nuestra congregación. Con un corazón por la comunidad y una pasión por la enseñanza de la Palabra, trabajan incansablemente para fortalecer la fe y el crecimiento espiritual de cada miembro. </p>
                     </div>
                 </div>
             </section>
@@ -57,7 +58,8 @@ export const ChurchDetails = () => {
                             <h1 className={homeStyles.h1}>Nuestros Co-Pastores</h1>
                             <hr className={homeStyles.hr2} />
                             <p className={homeStyles.p}>
-                                <strong>{coFirstPastor}</strong> & <strong>{coSecondPastor}</strong> apoyan la visión de la iglesia y sirven con amor a la congregación.
+                                <strong>{coFirstPastor}</strong> 
+                                {coSecondPastor && <> & <strong>{coSecondPastor}</strong></>} apoyan la visión de la iglesia y sirven con amor a la congregación.
                             </p>
                         </div>
                     </div>

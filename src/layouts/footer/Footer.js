@@ -18,14 +18,14 @@ export default function Footer() {
                 <div className={FooterStyles.content}>
                     <div className={FooterStyles.container}>
                         <h5>En Vivo</h5>
-                        <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer">Domingo @ 6PM</a>
+                        <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer" className="mb-4">Domingo @ 6PM</a>
                         <br/>
                         <h5>Navegación </h5>
                         <CustomLink to="/iglesias" onClick={handleScrollToTop}>Iglesias</CustomLink>
                         <CustomLink to="/eventos" onClick={handleScrollToTop}>Eventos</CustomLink>
                         <CustomLink to="/medios" onClick={handleScrollToTop}>Medios</CustomLink>
                         <CustomLink to="/siembra" onClick={handleScrollToTop}>Donar</CustomLink>
-                        <CustomLink to="/logIn">Account</CustomLink>
+                        {/* <CustomLink to="/logIn">Account</CustomLink> */}
                     </div>
                     <div className={FooterStyles.container}>
                         <h5>Iglesias</h5>

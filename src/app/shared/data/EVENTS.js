@@ -1,4 +1,4 @@
-import eventImg from "../img/youth_camp_1.png"
+// import eventImg from "../img/youth_camp_1.png"
 
 export const EVENTS = [
     /* {

@@ -3,7 +3,7 @@ import Button from "../button/Button"
 import { formatChurchName } from "../../utils/formatters";
 
 const ChurchLocationCard = ({ location }) => {
-    const { churchName, address, image, mainService, id } = location;
+    const { churchName, address, image, mainService } = location;
 
     const handleScrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'auto' });
