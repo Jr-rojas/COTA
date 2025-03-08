@@ -45,7 +45,7 @@ export const ChurchDetails = () => {
                     <div className={homeStyles.content2}>
                         <h1 className={homeStyles.h1}>Nuestros Pastores</h1>
                         <hr className={homeStyles.hr2} />
-                        <p className={homeStyles.p}><strong>{firstPastor}</strong> & <strong>{secondPastor}</strong> ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p className={homeStyles.p}><strong>{firstPastor}</strong> & <strong>{secondPastor}</strong> son siervos dedicados al llamado de Dios, guiando con amor y sabiduría a nuestra congregación. Con un corazón por la comunidad y una pasión por la enseñanza de la Palabra, trabajan incansablemente para fortalecer la fe y el crecimiento espiritual de cada miembro. </p>
                     </div>
                 </div>
             </section>
