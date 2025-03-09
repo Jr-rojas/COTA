@@ -1,0 +1,16 @@
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+
+      @media (max-width: 992px) {
+        max-height: 400px;
+      }
+    }
+  }
+  

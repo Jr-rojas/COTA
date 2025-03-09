@@ -10,8 +10,12 @@ export default function Button({title, type, link, onClick, bgColor, hoverColor,
     const handleClick = (e) => {
         if (disabled) {
             e.preventDefault();
-        } else if (onClick) {
-            onClick(e);
+        } else {
+            window.scrollTo(0, 0);
+
+            if (onClick) {
+                onClick(e);
+            }
         }
     };
 

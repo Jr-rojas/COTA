@@ -7,6 +7,7 @@ import { ChurchDetails } from './pages/churchPage/ChurchDetails';
 import Watch from './pages/Watch';
 import Events from './pages/Events';
 import Give from './pages/Give';
+import About from './pages/About'
 /* import LogIn from './pages/LogIn';
 import SignUp from './pages/signUp'; */
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/eventos" element={<MainLayout><Events/></MainLayout>}/>
           <Route path="/medios" element={<MainLayout><Watch/></MainLayout>}/>
           <Route path="/siembra" element={<MainLayout><Give/></MainLayout>}/>
+          <Route path="/about" element={<MainLayout><About/></MainLayout>}/>
           {/* <Route path="/logIn" element={<LogIn/>}/>
           <Route path="/signUp" element={<SignUp/>}/> */}
         </Routes>

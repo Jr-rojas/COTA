@@ -31,7 +31,6 @@ export default function Home() {
                             link='/about'
                             bgColor="blue"
                             hoverColor="light"
-                            disabled={true}
                         />
                     </div>
                     <div className={styles.img} style={{ backgroundImage: `url(${churchLogo})` }} />
