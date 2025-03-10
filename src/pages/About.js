@@ -10,7 +10,9 @@ export default function About() {
             <section className="bg-light text-center py-5 ">
                 <div className="container-xl my-2">
                     <h1 className="transformTextN lh-sm">Church of the Americas <span className="text-danger">levantando una generacion para Dios.</span></h1>
-                    <p className="mt-4">Con bases sólidas en Su Palabra, seguimos el llamado de expandir Su reino, guiados por una comunidad de pastores y líderes comprometidos con la fe, la misión y el crecimiento espiritual.</p>
+                    <div className="container-lg">
+                        <p className="mt-4">Con bases sólidas en Su Palabra, seguimos el llamado de expandir Su reino, guiados por una comunidad de pastores y líderes comprometidos con la fe, la misión y el crecimiento espiritual.</p>
+                    </div>
                 </div>
             </section>
             <div className="wave-container"></div>
@@ -37,6 +39,34 @@ export default function About() {
                             <br/>
                             Una de la cosas que Dios nos a enviado es al rescate a un mundo necesitado. Nosotros somos agentes enviados, a ayudar a las personas a encontrar el propósito de Dios en sus vidas. Una persona con visión, siempre tendrá algo que hacer, sin justificar las circunstancias.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="bg-light">
+                <div className="wave-container bg-dark"></div>
+            </section>
+            <section className="bg-light py-5">
+                <div className="container-xl my-5 text-center">
+                    <h2 className="mb-4">Conose Mas</h2>
+                    <div className="row justify-content-around p-3 gap-2">
+                        <div className="col-md-3 card px-0 text-light hover-shadow ">
+                            <img src="/shared/images/pastors/PastorErasmo.jpg" className="card-img" alt="..."/>
+                            <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                                <h5 className="card-title">Pastores</h5>
+                            </div>
+                        </div>
+                        <div className="col-md-3 card px-0 text-light hover-shadow ">
+                            <img src="/cota-logo.png" className="card-img" alt="..."/>
+                            <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                                <h5 className="card-title">Lema</h5>
+                            </div>
+                        </div>
+                        <div className="col-md-3 card px-0 text-light hover-shadow ">
+                            <img src="/shared/images/leadPastor.jpg" className="card-img" alt="..."/>
+                            <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                                <h5 className="card-title">Credo</h5>
+                            </div>
                         </div>
                     </div>
                 </div>

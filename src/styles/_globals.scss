@@ -11,6 +11,16 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  .hover-shadow {
+    transition: box-shadow all 0.5s ease;
+
+    &:hover {
+        box-shadow: 0 5px 30px $primary;
+        transform: scale(1.05);
+    }
+}
+
   
 .ovalImage {
     width: 200px;
