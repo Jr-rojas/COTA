@@ -20,7 +20,7 @@ export default function About() {
                     <h2 className="lh-sm">Pastores Erasmo y Elvia Solis</h2>
                     <div className="row">
                         <div className={`col-lg ${styles.img}`}>
-                            <img className="img-fluid rounded-3" src="/shared/images/pastors/pastorErasmo.jpg" alt="Pastor Erasmo & Elvira" />
+                            <img className="img-fluid rounded-3" src="/shared/images/pastors/PastorErasmo.jpg" alt="Pastor Erasmo & Elvira" />
                         </div>
                         <div className="my-2 p-3 col-lg">
                             <p>
