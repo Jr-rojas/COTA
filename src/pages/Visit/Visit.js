@@ -30,7 +30,7 @@ export default function Visit() {
                     </div>
                     <div>
                         {/* <div className={visitStyles.img}></div> */}
-                        <img src={welcomeImg} alt="Girl in a jacket" className={visitStyles.img} />
+                        <img src={welcomeImg} alt="3 people with a welcome sign" className={visitStyles.img} />
                     </div>
                     <div className={visitStyles.blurryBackground}></div>
                 </div>
