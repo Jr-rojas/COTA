@@ -16,7 +16,7 @@
 }
 
 .fanSection{
-    background-image: url('../app/shared/img/banner.jpg');
+    background-image: url('../../app/shared/img/banner.jpg');
     background-size: cover;
     background-position: center;
 
@@ -152,7 +152,7 @@
 }
 
 .img{
-    background: url("../app/shared/img/ensanchaLaVision.jpg");
+    background: url("../../app/shared/img/ensanchaLaVision.jpg");
     background-size:cover;
     background-position:center;
     visibility: visible;
@@ -166,7 +166,7 @@
 }
 
 .imgR{
-    background: url("../app/shared/img/toma_tu_llamado.png") center center / cover no-repeat;
+    background: url("../../app/shared/img/toma_tu_llamado.png") center center / cover no-repeat;
     visibility: visible;
     opacity: 1;
 

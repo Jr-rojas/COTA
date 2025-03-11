@@ -8,7 +8,7 @@ import { selectAllChurches } from "../../components/churchesCard/churchesSlice";
 import HeroAlt from '../../components/heroSection/HeroAlt';
 import { FlexCenter } from '../../components/Flex';
 
-import homeStyles from '../Home.module.scss'
+import homeStyles from '../Home/Home.module.scss'
 import styles from './ChurchDetails.module.css'
 
 

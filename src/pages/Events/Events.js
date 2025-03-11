@@ -1,7 +1,7 @@
-import HeroAlt from "../components/heroSection/HeroAlt";
-import eventImg from "../app/shared/img/toma_tu_llamado.png"
-import EventsList from "../components/eventsCard/eventList";
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import HeroAlt from "../../components/heroSection/HeroAlt";
+import eventImg from "../../app/shared/img/toma_tu_llamado.png"
+import EventsList from "../../components/eventsCard/eventList";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 
 export default function Events() {

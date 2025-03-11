@@ -1,11 +1,11 @@
-import Hero from '../components/heroSection/Hero'
-import FeaturedEvents from '../layouts/FeaturedEvents'
-import { nextEvents } from '../components/eventsCard/eventsSlice'
-import Button from '../components/button/Button'
+import Hero from '../../components/heroSection/Hero'
+import FeaturedEvents from '../../layouts/FeaturedEvents'
+import { nextEvents } from '../../components/eventsCard/eventsSlice'
+import Button from '../../components/button/Button'
 //import useDocumentTitle from '../hooks/useDocumentTitle'
 
-import leadPastor from "../app/shared/img/leadPastor.jpg"
-import churchLogo from "../app/shared/img/cota-oldLogo.jpg"
+import leadPastor from "../../app/shared/img/leadPastor.jpg"
+import churchLogo from "../../app/shared/img/cota-oldLogo.jpg"
 import styles from './Home.module.scss'
 import fanStyles from './HomeFancy.module.css'
 
@@ -48,8 +48,8 @@ export default function Home() {
                                 <h1 className="display-3 fw-bold lh-1">Vision</h1>
                             </div>
                             <hr className={fanStyles.hr} />
-                            <p className={styles.p}> 
-                                Fuimos desafiados a ensanchar nuestra visión y prepararnos para lo que Dios quiere hacer en nosotros y a través de nosotros. Creemos que Dios nos llama a crecer, a expandirnos y a impactar generaciones. ¡Es tiempo de avanzar con fe y conquistar las promesas de Dios! <br/><br/>
+                            <p className={styles.p}>
+                                Fuimos desafiados a ensanchar nuestra visión y prepararnos para lo que Dios quiere hacer en nosotros y a través de nosotros. Creemos que Dios nos llama a crecer, a expandirnos y a impactar generaciones. ¡Es tiempo de avanzar con fe y conquistar las promesas de Dios! <br /><br />
                                 <p>📺 Revive este poderoso evento en Facebook y sé parte de lo que Dios está haciendo.</p>
                             </p>
                             <Button
@@ -72,33 +72,33 @@ export default function Home() {
                         <h1 className="display-3 fw-bold lh-1">Proximos Eventos</h1>
                         <hr className={styles.hr} />
                     </div>
-                    
-                        {upcomingEvents.length > 0 ? (
-                            <div className='items'>
+
+                    {upcomingEvents.length > 0 ? (
+                        <div className='items'>
                             {upcomingEvents.map((event) => {
                                 return (<FeaturedEvents key={event.id} event={event} />)
                             })}
-                            </div>
-                        ):(
-                            <div className='container'>
-                                <p className="text-light fw-bold fs-4 my-4">📅 ¡Estate pendiente de nuestros próximos eventos!</p>
-                            </div>
-                        )}
+                        </div>
+                    ) : (
+                        <div className='container'>
+                            <p className="text-light fw-bold fs-4 my-4">📅 ¡Estate pendiente de nuestros próximos eventos!</p>
+                        </div>
+                    )}
                     {upcomingEvents.length > 0 && (
-                    <div className='buttons lg hover-dark'>
-                        <Button
+                        <div className='buttons lg hover-dark'>
+                            <Button
                                 title="Mas Eventos"
                                 type="link"
                                 link="/events"
                                 hoverColor="dark"
                             />
-                    </div>
+                        </div>
                     )}
                 </div>
             </section>
-           
+
             {/* TOMA TU LLAMADO */}
-           {/*  <section className={fanStyles.sectionB}>
+            {/*  <section className={fanStyles.sectionB}>
                 <div className={fanStyles.containerR}>
                     <div className={fanStyles.contentR}>
                         <div className={fanStyles.innerR}>
@@ -136,11 +136,11 @@ export default function Home() {
                         <h1 className="display-3 fw-bold lh-1">En Linea</h1>
                         <hr className={styles.hr2} />
                         <p className={styles.p}>Te invitamos a ser parte de nuestras transmisiones en vivo desde la iglesia central en Los Ángeles, CA, con nuestro Apóstol Erasmo. No te pierdas un tiempo de palabra, adoración y transformación en la presencia de Dios.
-                        <br/>
-                        <strong>📅 Horarios de servicio:</strong>
-                        <br/>📍 Miércoles a las 6:00 PM (Hora del Pacífico) 
-                        <br/>📍 Domingo a las 10:00 AM (Hora del Pacífico)
-                        <br/><strong>📺 Conéctate y experimenta el mover de Dios en vivo.</strong></p>
+                            <br />
+                            <strong>📅 Horarios de servicio:</strong>
+                            <br />📍 Miércoles a las 6:00 PM (Hora del Pacífico)
+                            <br />📍 Domingo a las 10:00 AM (Hora del Pacífico)
+                            <br /><strong>📺 Conéctate y experimenta el mover de Dios en vivo.</strong></p>
                         <Button
                             title="En Vivo"
                             type="external"

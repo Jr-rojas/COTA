@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandHoldingDollar, faEnvelope, faMobileScreen } from '@fortawesome/free-solid-svg-icons';
 
-import useDocumentTitle from "../hooks/useDocumentTitle";
-import Button from "../components/button/Button";
-import { FlexCard, FlexCenter } from "../components/Flex";
-import { Container } from "../components/StyledContainer";
-import { StyledCard } from "../components/StyledCard";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
+import Button from "../../components/button/Button";
+import { FlexCard, FlexCenter } from "../../components/Flex";
+import { Container } from "../../components/StyledContainer";
+import { StyledCard } from "../../components/StyledCard";
 
-import image from "../app/shared/img/aposento.jpg"
-import styles from './Home.module.scss';
+import image from "../../app/shared/img/aposento.jpg"
+import styles from '../Home/Home.module.scss';
 
 
 export default function Give() {

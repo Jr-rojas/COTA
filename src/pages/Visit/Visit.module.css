@@ -53,7 +53,7 @@
 
 .wte {
     background-color: #050505;
-    background-image: url("../app/shared/img/b&w_Church.jpg");
+    background-image: url("../../app/shared/img/b&w_Church.jpg");
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -156,11 +156,11 @@
     }
 
 .groupSquares a:nth-child(1) {
-    background-image: url("../app/shared/img/cotakids.jpg");
+    background-image: url("../../app/shared/img/cotakids.jpg");
   }
   
   .groupSquares a:nth-child(2) {
-    background-image: url("../app/shared/img/youthgroup.jpg");
+    background-image: url("../../app/shared/img/youthgroup.jpg");
   }
   
   .groupSquares a:nth-child(3) {
@@ -168,7 +168,7 @@
   }
   
   .groupSquares a:nth-child(4) {
-    background-image: url("../app/shared/img/smallgroup.jpg");
+    background-image: url("../../app/shared/img/smallgroup.jpg");
   }
 
 .square {
@@ -228,7 +228,7 @@
     justify-content:flex-start;
     position:relative;
     background-color: #fff;
-    background-image: url("../app/shared/img/ensanchaLaVision.jpg");
+    background-image: url("../../app/shared/img/ensanchaLaVision.jpg");
     background-position:top;
     background-size:cover;
     min-height: 300px;

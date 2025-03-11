@@ -1,9 +1,9 @@
-import useDocumentTitle from "../hooks/useDocumentTitle"
-import ChurchLocationList from "../components/churchesCard/churchesList"
-import HeroAlt from "../components/heroSection/HeroAlt"
+import useDocumentTitle from "../../hooks/useDocumentTitle"
+import ChurchLocationList from "../../components/churchesCard/churchesList"
+import HeroAlt from "../../components/heroSection/HeroAlt"
 
-import visitImg from "../app/shared/img/visit.jpg"
-import welcomeImg from "../app/shared/img/welcomeFamily.jpg"
+import visitImg from "../../app/shared/img/visit.jpg"
+import welcomeImg from "../../app/shared/img/welcomeFamily.jpg"
 import visitStyles from "./Visit.module.css"
 
 
@@ -30,7 +30,7 @@ export default function Visit() {
                     </div>
                     <div>
                         {/* <div className={visitStyles.img}></div> */}
-                        <img src={welcomeImg} alt="Girl in a jacket" className={visitStyles.img}/>
+                        <img src={welcomeImg} alt="Girl in a jacket" className={visitStyles.img} />
                     </div>
                     <div className={visitStyles.blurryBackground}></div>
                 </div>

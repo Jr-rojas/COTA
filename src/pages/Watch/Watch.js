@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify, faItunes, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
 
-import HeroAlt from "../components/heroSection/HeroAlt"
-import useDocumentTitle from "../hooks/useDocumentTitle"
-import { Container } from "../components/StyledContainer"
-import Button from "../components/button/Button"
+import HeroAlt from "../../components/heroSection/HeroAlt"
+import useDocumentTitle from "../../hooks/useDocumentTitle"
+import { Container } from "../../components/StyledContainer"
+import Button from "../../components/button/Button"
 
-import watchImg from "../app/shared/img/praying2.jpg"
-import albumLA from "../app/shared/img/me_has_dado_un_proposito.jpeg"
-import albumBK from "../app/shared/img/luz_a_las_naciones.jpg"
-import albumLA2 from "../app/shared/img/tu_eres_dios.png"
+import watchImg from "../../app/shared/img/praying2.jpg"
+import albumLA from "../../app/shared/img/me_has_dado_un_proposito.jpeg"
+import albumBK from "../../app/shared/img/luz_a_las_naciones.jpg"
+import albumLA2 from "../../app/shared/img/tu_eres_dios.png"
 import styles from "./Watch.module.css"
 
 

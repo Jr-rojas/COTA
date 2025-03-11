@@ -1,5 +1,6 @@
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import useDocumentTitle from "../../hooks/useDocumentTitle";
 import styles from "./About.module.scss"
+import { Link } from "react-router-dom";
 
 
 export default function About() {
@@ -49,25 +50,31 @@ export default function About() {
             <section className="bg-light py-5">
                 <div className="container-xl my-5 text-center">
                     <h2 className="mb-4">Conose Mas</h2>
-                    <div className="row justify-content-around p-3 gap-2">
-                        <div className="col-md-3 card px-0 text-light hover-shadow ">
-                            <img src="/shared/images/pastors/PastorErasmo.jpg" className="card-img" alt="..."/>
-                            <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                                <h5 className="card-title">Pastores</h5>
+                    <div className="row justify-content-around p-3 gy-3">
+                        <Link to="/about/pastores" className="col-md-3">
+                            <div className="card px-0 text-light hover-shadow h-100">
+                                <img src="/shared/images/pastors/PastorErasmo.jpg" className="card-img" alt="..."/>
+                                <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                                    <h5 className="card-title">Pastores</h5>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-3 card px-0 text-light hover-shadow ">
-                            <img src="/cota-logo.png" className="card-img" alt="..."/>
-                            <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                                <h5 className="card-title">Lema</h5>
+                        </Link>
+                        <Link to="/about/lema" className="col-md-3">
+                            <div className="card px-0 text-light hover-shadow h-100">
+                                <img src="/cota-logo.png" className="card-img" alt="..."/>
+                                <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                                    <h5 className="card-title">Lema</h5>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-3 card px-0 text-light hover-shadow ">
-                            <img src="/shared/images/leadPastor.jpg" className="card-img" alt="..."/>
-                            <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                                <h5 className="card-title">Credo</h5>
+                        </Link>
+                        <Link to="/about/credo" className="col-md-3">
+                            <div className="card px-0 text-light hover-shadow h-100">
+                                <img src="/shared/images/leadPastor.jpg" className="card-img" alt="..."/>
+                                <div className="card-img-overlay d-flex align-items-end justify-content-center">
+                                    <h5 className="card-title">Credo</h5>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </section>

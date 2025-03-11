@@ -7,7 +7,7 @@ import { selectAllChurches } from "./churchesSlice";
 import ChurchLocationCard from "./ChurchLocationCard";
 import { DropdownChecklist, ChecklistLabel, ChecklistUl } from "../DropdownChecklist";
 
-import visitStyles from "../../pages/Visit.module.css"
+import visitStyles from "../../pages/Visit/Visit.module.css"
 
 
 const ChurchLocationList = () => {
