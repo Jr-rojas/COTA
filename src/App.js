@@ -10,6 +10,7 @@ import Give from './pages/Give/Give';
 import About from './pages/About/About'
 import Lema from './pages/About/Lema'
 import Credo from './pages/About/Credo';
+import Pastores from './pages/About/Pastores';
 /* import LogIn from './pages/LogIn';
 import SignUp from './pages/signUp'; */
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/about" element={<MainLayout><About /></MainLayout>} />
         <Route path="/about/lema" element={<MainLayout><Lema /></MainLayout>} />
         <Route path="/about/credo" element={<MainLayout><Credo /></MainLayout>} />
+        <Route path="/about/pastores" element={<MainLayout><Pastores /></MainLayout>} />
         {/* <Route path="/logIn" element={<LogIn/>}/>
           <Route path="/signUp" element={<SignUp/>}/> */}
       </Routes>

@@ -21,6 +21,7 @@ export default function Footer() {
                         <a href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer" className="mb-4">Domingo @ 6PM</a>
                         <br/>
                         <h5>Navegación </h5>
+                        <CustomLink to="/about" onClick={handleScrollToTop}>Sobre Nosotros</CustomLink>
                         <CustomLink to="/iglesias" onClick={handleScrollToTop}>Iglesias</CustomLink>
                         <CustomLink to="/eventos" onClick={handleScrollToTop}>Eventos</CustomLink>
                         <CustomLink to="/medios" onClick={handleScrollToTop}>Medios</CustomLink>
