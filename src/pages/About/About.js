@@ -56,7 +56,7 @@ export default function About() {
                 <div className="container-xl my-5 text-center">
                     <h2 className="mb-4">Conose Mas</h2>
                     <div className="row justify-content-around p-3 gy-3">
-                        <Link to="/about/pastores" className="col-md-3">
+                        <Link to="/about/pastores" onClick={handleScrollToTop} className="col-md-3">
                             <div className="card px-0 text-light hover-shadow h-100">
                                 <img src="/shared/images/pastors/PastorErasmo.jpg" className="card-img" alt="..."/>
                                 <div className="card-img-overlay d-flex align-items-end justify-content-center">

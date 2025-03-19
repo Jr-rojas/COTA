@@ -2,7 +2,7 @@ import Hero from '../../components/heroSection/Hero'
 import FeaturedEvents from '../../layouts/FeaturedEvents'
 import { nextEvents } from '../../components/eventsCard/eventsSlice'
 import Button from '../../components/button/Button'
-//import useDocumentTitle from '../hooks/useDocumentTitle'
+import useDocumentTitle from '../../hooks/useDocumentTitle'
 
 import leadPastor from "../../app/shared/img/leadPastor.jpg"
 import churchLogo from "../../app/shared/img/cota-oldLogo.jpg"
@@ -11,7 +11,7 @@ import fanStyles from './HomeFancy.module.css'
 
 
 export default function Home() {
-    //useDocumentTitle("Home - COTA")
+    useDocumentTitle("Church of the Americas")
     const upcomingEvents = nextEvents();
 
     return (

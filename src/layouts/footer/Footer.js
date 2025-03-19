@@ -1,4 +1,6 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faYoutube, faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 import { selectAllChurches } from '../../components/churchesCard/churchesSlice';
 
@@ -39,13 +41,27 @@ export default function Footer() {
                     </div>
                     <div className={FooterStyles.container}>
                         <h5>Conectate</h5>
-                        <form className={FooterStyles.form}>
+                            <div className="row">
+                                <a className="col" href="https://www.youtube.com/@ChurchoftheAmericas" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faYoutube} size="2xl" />
+                                </a>
+                                <a className="col" href="https://www.facebook.com/churchoftheamericas" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faFacebook} size="2xl" />
+                                </a>
+                                <a className="col" href="https://www.instagram.com/churchoftheamericas/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faInstagram} size="2xl" />
+                                </a>
+                                <a className="col" href="https://www.tiktok.com/@churchoftheamericas1" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faTiktok} size="2xl" />
+                                </a>
+                            </div>
+                        {/* <form className={FooterStyles.form}>
                             <label for="email">Únete a Nuestro Boletín </label>
                             <span>
                                 <input type="email" id="email" name="email" />
                                 <input type="submit" id="submit" value="GO" />
                             </span>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </section>

@@ -19,7 +19,7 @@ export default function Watch() {
     return (
         <>
             <HeroAlt page="Medios" img={watchImg} hasGradient={true}
-                children={<h3 style={{ color: "#e9eaec", margin: "0" }}>Unete con nosostros cada Domingo @ 6:00PM &  <br /> Miercoles @ 6:00PM de nuestra iglesia central.</h3>}
+                children={<h3>Unete con nosostros cada Domingo @ 6:00PM &  <br /> Miercoles @ 6:00PM de nuestra iglesia central.</h3>}
                 button={<Button
                     title="En Vivo"
                     type="external"
@@ -30,7 +30,7 @@ export default function Watch() {
             <section>
 
             </section>
-            <section style={{ background: "#252525" }}>
+            <section>
                 <Container>
                     <div className={styles.grid}>
                         <div style={{ maxWidth: "600px" }}>
@@ -39,10 +39,10 @@ export default function Watch() {
                             </div>
                         </div>
                         <div>
-                            <h2 style={{ margin: "0 0 8px 0" }}>Watch our Anual Event 2024 </h2>
+                            <h2 className="text-light">Watch our Anual Event 2024 </h2>
                             <h4>Herederos de las Promesas</h4>
-                            <p style={{ color: "white" }}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <p className="text-light">
+                                ¡Revive nuestro Evento Anual 2024 - Herederos de las Promesas! Te invitamos a vivir este poderoso momento de fe y adoración. Además, suscríbete a nuestro canal de YouTube para encontrar predicaciones, alabanzas y mensajes que fortalecerán tu vida espiritual. ¡Haz clic, únete a nuestra comunidad y comparte la bendición con otros! 🙌📺✨
                             </p>
                         </div>
                     </div>
@@ -52,17 +52,6 @@ export default function Watch() {
             <section style={{ backgroundColor: "#fff" }}>
                 <Container>
                     <h1 style={{ color: "black" }}>Check out our music</h1>
-                    <div className={styles.container}>
-                        <div className={styles.album}>
-                            <a href="https://open.spotify.com/album/1e2Zo7k7zANWodtBkhZfuP?si=gcJ5eHecQ6izeep4MetmOg" target="_blank" rel="noopener noreferrer"><div style={{ backgroundImage: `url(${albumLA})` }} /></a>
-                        </div>
-                        <div className={styles.album2}>
-                            <a href="https://open.spotify.com/album/1e2Zo7k7zANWodtBkhZfuP?si=gcJ5eHecQ6izeep4MetmOg" target="_blank" rel="noopener noreferrer"><div style={{ backgroundImage: `url(${albumBK})` }} /></a>
-                        </div>
-                        <div className={styles.album3}>
-                            <a href="https://open.spotify.com/album/2YOUNKhu7Wvlh9HjwEMkEM?si=9pTfuX0oRZ6x4T1fQ4ke-Q" target="_blank" rel="noopener noreferrer"><div style={{ backgroundImage: `url(${albumLA2})` }} /></a>
-                        </div>
-                    </div>
                     <div className={styles.iconGrid}>
                         <a href="https://open.spotify.com/artist/1PY7JdA2v5MJ7wFILtqBSp?si=YMpzNf8_RwG2xLP9WBkSNg" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faSpotify} size="2xl" />
@@ -74,8 +63,18 @@ export default function Watch() {
                             <FontAwesomeIcon icon={faSoundcloud} size="2xl" />
                         </a>
                     </div>
+                    <div className={styles.container}>
+                        <div className={styles.album}>
+                            <a href="https://open.spotify.com/album/1e2Zo7k7zANWodtBkhZfuP?si=gcJ5eHecQ6izeep4MetmOg" target="_blank" rel="noopener noreferrer"><div style={{ backgroundImage: `url(${albumLA})` }} /></a>
+                        </div>
+                        <div className={styles.album2}>
+                            <a href="https://open.spotify.com/album/1e2Zo7k7zANWodtBkhZfuP?si=gcJ5eHecQ6izeep4MetmOg" target="_blank" rel="noopener noreferrer"><div style={{ backgroundImage: `url(${albumBK})` }} /></a>
+                        </div>
+                        <div className={styles.album3}>
+                            <a href="https://open.spotify.com/album/2YOUNKhu7Wvlh9HjwEMkEM?si=9pTfuX0oRZ6x4T1fQ4ke-Q" target="_blank" rel="noopener noreferrer"><div style={{ backgroundImage: `url(${albumLA2})` }} /></a>
+                        </div>
+                    </div>
                 </Container>
-
             </section>
         </>
     )

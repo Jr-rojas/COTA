@@ -9,14 +9,14 @@ export default function Hero({ title }) {
                 <div className='container'>
                     <h1 className="display-1 fw-bold text-light">{title}</h1>
                         <div>
-                            <Button
+                           {/*  <Button
                                 type="link"
                                 disabled={true}
                                 title="Soy Nuevo"
                                 link="/new"
                                 bgColor="light"
                                 hoverColor="blue"
-                            />
+                            /> */}
                             <Button
                                 type="external"
                                 title="En Vivo"
