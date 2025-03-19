@@ -265,7 +265,7 @@ export const CHURCHES = [
         image: "cota-waukegan.jpg",
         leadPastor: {
           name: ["Rodolfo", "Becky Alvarez"], 
-          image: "PastorWerclyn.jpeg"
+          image: "PastorRodolfo.jpeg"
         },
         mainService: [
           {
