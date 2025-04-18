@@ -3,6 +3,7 @@ import FeaturedEvents from '../../layouts/FeaturedEvents'
 import { nextEvents } from '../../components/eventsCard/eventsSlice'
 import Button from '../../components/button/Button'
 import useDocumentTitle from '../../hooks/useDocumentTitle'
+import { motion } from 'motion/react'
 
 import leadPastor from "../../app/shared/img/leadPastor.jpg"
 import churchLogo from "../../app/shared/img/cota-oldLogo.jpg"
@@ -21,7 +22,13 @@ export default function Home() {
             {/* NUESTRA HISTORIA SECTION */}
             <section className={styles.section}>
                 <div className={styles.container}>
-                    <div className={styles.content}>
+                    <motion.div 
+                        className={styles.content}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <h1 className="display-3 fw-bold lh-1">Nuestra Historia</h1>
                         <hr className={styles.hr} />
                         <p className={styles.p}>En C.O.T.A United, somos más que un ministerio, somos una <strong> familia unida</strong> por la fe y el propósito de Dios. Creemos que hemos sido llamados para este tiempo, para crecer en todas las áreas de nuestra vidas. Descubre nuestra misión, visión y estrategia que nos impulsan a transformar vidas y establecer Su Reino en la Tierra.</p>
@@ -32,16 +39,35 @@ export default function Home() {
                             bgColor="blue"
                             hoverColor="light"
                         />
-                    </div>
-                    <div className={styles.img} style={{ backgroundImage: `url(${churchLogo})` }} />
+                    </motion.div>
+                    <motion.div 
+                        className={styles.img} 
+                        style={{ backgroundImage: `url(${churchLogo})` }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    />
                 </div>
             </section>
 
             {/* ENSANCHA LA VISION */}
             <section className={fanStyles.section}>
                 <div className={fanStyles.container}>
-                    <div className={fanStyles.img}></div>
-                    <div className={fanStyles.content}>
+                    <motion.div 
+                        className={fanStyles.img}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    ></motion.div>
+                    <motion.div 
+                        className={fanStyles.content}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        >
                         <div className={fanStyles.inner}>
                             <div className={fanStyles.heading}>
                                 <h4 className={styles.h4}>Ensancha la</h4>
@@ -59,7 +85,7 @@ export default function Home() {
                                 hoverColor="dark"
                             />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -67,11 +93,18 @@ export default function Home() {
             <section className={fanStyles.fanSection} >
                 {/* <FeaturedEvents/> */}
                 <div className='container my-5'>
-                    <div className={styles.content}>
-                        <h4>Acompañanos</h4>
-                        <h1 className="display-3 fw-bold lh-1">Proximos Eventos</h1>
-                        <hr className={styles.hr} />
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
+                        <div className={styles.content}>
+                            <h4>Acompañanos</h4>
+                            <h1 className="display-3 fw-bold lh-1">Proximos Eventos</h1>
+                            <hr className={styles.hr} />
+                        </div>
+                    </motion.div>
 
                     {upcomingEvents.length > 0 ? (
                         <div className='items'>
@@ -80,9 +113,15 @@ export default function Home() {
                             })}
                         </div>
                     ) : (
-                        <div className='container'>
+                        <motion.div 
+                            className='container'
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ amount: 0.2 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                        >
                             <p className="text-light fw-bold fs-4 my-4">📅 ¡Estate pendiente de nuestros próximos eventos!</p>
-                        </div>
+                        </motion.div>
                     )}
                     {upcomingEvents.length > 0 && (
                         <div className='buttons lg hover-dark'>
@@ -130,8 +169,21 @@ export default function Home() {
             {/* Unete con Nosostros */}
             <section className={styles.sectionB}>
                 <div className={styles.container2}>
-                    <div className={styles.img2} style={{ backgroundImage: `url(${leadPastor})` }} />
-                    <div className={styles.content2}>
+                    <motion.div 
+                        className={styles.img2} 
+                        style={{ backgroundImage: `url(${leadPastor})` }} 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    />
+                    <motion.div 
+                        className={styles.content2}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ amount: 0.2 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
                         <h4>Unete con nosostros</h4>
                         <h1 className="display-3 fw-bold lh-1">En Linea</h1>
                         <hr className={styles.hr2} />
@@ -147,7 +199,7 @@ export default function Home() {
                             link="https://www.facebook.com/churchoftheamericas"
                             hoverColor="dark"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>

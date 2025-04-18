@@ -48,7 +48,7 @@ export default function Credo(){
                                 </Accordion.Body>
                             </Accordion.Item>
                         </Accordion>
-                        <li className="fw-bold fs-3">Hombre</li>
+                        <li className="fw-bold fs-3">Jesus</li>
                         <Accordion>
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header>¿Jesus?</Accordion.Header>
