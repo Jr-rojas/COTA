@@ -1,0 +1,52 @@
+@import "./custom-variables";
+
+body {
+    margin: 0;
+    color: $body-bg;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  .hover-shadow {
+    transition: box-shadow all 0.5s ease;
+
+    &:hover {
+        box-shadow: 0 5px 30px black;
+        transform: scale(1.05);
+    }
+}
+
+ol{
+  .accordion{
+    padding-bottom: 2rem !important;
+  }
+}
+  
+.ovalImage {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      flex-basis: 60%;
+    }
+}
+
+.wave-container {
+  width: 100%;
+  height: 150px;
+  background: $light;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+
+  @media (max-width: 600px) {
+    height: 80px; 
+  }
+}

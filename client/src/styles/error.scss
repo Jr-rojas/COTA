@@ -1,0 +1,18 @@
+.error{
+    border: 1px solid red;
+    box-shadow: 0 0 8px rgba(247, 109, 109, 0.6);
+    outline:none;
+}
+
+.errorMessage {
+    color: #F82626;
+    margin:0;
+    font-size: 14px;
+}
+
+.passwordToggleIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}

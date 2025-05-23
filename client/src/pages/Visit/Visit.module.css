@@ -1,0 +1,333 @@
+.smallSection {
+    background-color: aliceblue;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallSection div h1 {
+    letter-spacing: 2pt;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.colorText {
+    color: #3C82D4;
+}
+
+.locations {
+    background-color: #fff;
+}
+
+.locationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1416px;
+    column-gap: 16px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.selectedStates{
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    background-color: white;
+}
+
+.selectedState{
+    background-color: #d4d4d4;
+    padding: 10px;
+    border-radius: 16px;
+}
+.selectedState > span{
+    margin: 10px;
+}
+
+.selectedState > :nth-child(2){
+    cursor: pointer;
+}
+
+.wte {
+    background-color: #050505;
+    background-image: url("../../app/shared/img/b&w_Church.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.wte p {
+    color: #fff;
+}
+
+.wte h2 {
+    color: #fff;
+}
+
+.wte a {
+    color: rgb(60, 130, 212);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wte a:hover {
+    color: #4a4a4a;
+}
+
+.wte>div {
+    display: flex;
+    position: relative;
+    max-width: 1540px;
+    padding: 3% 2%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.blurryBackground {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: #383838e2;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: 1 !important;
+}
+
+.wte>div div {
+    padding: 5%;
+    z-index: 2;
+}
+
+.wte>div>div h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.wte>div>div p {
+    font-size: 15px;
+}
+
+.wte>div>div img {
+    height: 300px;
+    width: 500px;
+}
+
+.forEveryone {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+}
+
+.textGroup {
+    width: 25%;
+    padding: 2%;
+    margin: 15px auto;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.textGroup h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.textGroup p{
+    font-size: 15px;
+}
+
+.groupSquares {
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.groupSquares a{
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    }
+
+.groupSquares a:nth-child(1) {
+    background-image: url("../../app/shared/img/cotakids.jpg");
+  }
+  
+  .groupSquares a:nth-child(2) {
+    background-image: url("../../app/shared/img/youthgroup.jpg");
+  }
+  
+  .groupSquares a:nth-child(3) {
+    background:linear-gradient(rgba(60, 130, 212), rgba(175, 173, 173, 0.7)); 
+  }
+  
+  .groupSquares a:nth-child(4) {
+    background-image: url("../../app/shared/img/smallgroup.jpg");
+  }
+
+.square {
+    height: auto;
+    background-color: #3C82D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.square::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(0px);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 0;
+  }
+
+  .square:hover::before {
+    filter: blur(6px);
+    opacity: 0.9;
+  }
+
+.square h3{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    color: rgb(0, 0, 0);
+    padding: 20px 10px 15px 10px;
+    z-index: 1;
+}
+
+.square hr{
+    width: 50%;
+    height: 3px;
+    background: rgb(248, 38, 38);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+.square:hover{
+    background-color: #4a4a4a;
+}
+
+.square:hover hr{
+    background: #3C82D4;
+}
+
+.endingWelcome{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    position:relative;
+    background-color: #fff;
+    background-image: url("../../app/shared/img/ensanchaLaVision.jpg");
+    background-position:top;
+    background-size:cover;
+    min-height: 300px;
+}
+
+.endingWelcome > div{
+    margin: 8px;
+    padding: 4%;
+    max-width: 1540px;
+}
+
+.endingWelcome div h4{
+    color: #fff ;
+    font-size: 30px;
+}
+
+.img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .locationGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding: 0 4px;
+        overflow: hidden;
+    }
+
+    .churchCard {
+        width: 390px;
+    }
+
+    .cardGroup> :nth-child(2) {
+        padding-left: 15px;
+    }
+
+    .churchCardBody> :nth-child(3) a {
+        margin-left: 0;
+    }
+
+    .smallSection div h1 {
+        letter-spacing: 1.5pt;
+        font-size: 24px !important;
+        line-height: 30px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cardGroup {
+        flex-wrap: wrap;
+    }
+
+    .wte>div {
+        display: flex;
+        padding: 10px 2%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wte>div>div img {
+        height: auto;
+        width: 100%;
+    }
+
+    .forEveryone{
+        flex-direction: column;
+    }
+
+    .textGroup{
+        width: 100%;
+    }
+
+    .groupSquares{
+        width: 100%;
+        min-height: 400px;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+}
+
+@media ((max-width: 1230px) and (min-width: 769px)) {
+    .locationGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content:space-evenly ;
+    }
+
+    .smallSection div h1 {
+        letter-spacing: 2pt;
+        font-size: 35px;
+        margin: 0 auto;
+    }
+
+    .wte>div>div img {
+        height: 250px;
+        width: 400px;
+    }
+}

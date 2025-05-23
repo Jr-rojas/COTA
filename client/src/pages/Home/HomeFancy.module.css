@@ -1,0 +1,220 @@
+.section{
+    background: #252525;
+
+
+    position:relative;
+    overflow: hidden;
+    margin-bottom: -160px;
+}
+
+.sectionB{
+    background: #ffffff;
+
+    position:relative;
+    overflow: hidden;
+    margin-top: -160px;
+}
+
+.fanSection{
+    background-image: url('../../app/shared/img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    padding:160px 0;
+    width: 100%;
+
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+    position: relative;
+    z-index: 2;
+}
+
+.containerR{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 7%;
+    position: relative;
+    z-index: 2;
+}
+
+.content{
+    flex: 0 0 calc(50% + 40px);
+    margin-left: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+.content::after {
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 50%;
+}
+
+.contentR{
+    flex: 0 0 calc(50% + 40px);
+    margin-right: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+.contentR::after {
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background: rgb(238, 238, 238);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 50%;
+}
+
+/* .h1{
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+} */
+
+.hr{
+    width: 100%;
+    height: 2px !important;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background: #F82626;
+    position: relative;
+    overflow: visible;
+}
+
+.hr::after{
+    content: '';
+    width: 50vw;
+    height: 2px;
+    background: #F82626;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hrR{
+    width: 100%;
+    height: 2px !important;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    background: #F82626;
+    position: relative;
+    overflow: visible;
+}
+
+.hrR::after{
+    content: '';
+    width: 50vw;
+    height: 2px;
+    background: #F82626;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.inner{
+    padding: 80px 0 80px 80px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+.innerR{
+    padding: 80px 80px 80px 0;
+    background: rgb(238, 238, 238);
+    position: relative;
+}
+
+.img{
+    background: url("../../app/shared/img/ensanchaLaVision.jpg");
+    background-size:cover;
+    background-position:center;
+    visibility: visible;
+    opacity: 1;
+
+    flex: 0 0 50%;
+    padding-top: 50%;
+    box-shadow: rgba(0,0,0,.4) 0 10px 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.imgR{
+    background: url("../../app/shared/img/toma_tu_llamado.png") center center / cover no-repeat;
+    visibility: visible;
+    opacity: 1;
+
+    flex: 0 0 50%;
+    padding-top: 50%;
+    box-shadow: rgba(0,0,0,.4) 0 10px 25px;
+    position: relative;
+    z-index: 2;
+}
+
+
+@media (max-width: 760px ) {
+    .container{
+        flex-flow: row wrap;
+    }
+    .containerR{
+        flex-flow: wrap-reverse;
+    }
+    .img{
+        flex:1 1 100%; 
+        padding-top:100%;
+    }
+    .imgR{
+        flex:1 1 100%; 
+        padding-top:100%;
+    }
+    .content{
+        flex:1 1 calc(100% + 40px); 
+        margin:-160px -20px 0 -20px;
+    }
+
+    .contentR{
+        flex:1 1 calc(100% + 40px); 
+        margin:-160px -20px 0 -20px;
+    }
+
+    .inner{
+        padding:200px 20px 40px 20px;
+    }
+
+    .innerR{
+        padding:200px 20px 40px 20px;
+    }
+
+    .content::after{
+        display: none;
+    }
+    .contentR::after{
+        display: none;
+    }
+}
