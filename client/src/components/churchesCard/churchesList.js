@@ -50,7 +50,7 @@ const ChurchLocationList = () => {
         <>
             <DropdownChecklist>
                 <ChecklistLabel><span>Estado: </span><FontAwesomeIcon onClick={toggleButton} icon={isToggler ? faSquareCaretUp : faSquareCaretDown} size="lg" /></ChecklistLabel>
-                <ChecklistUl isToggler={isToggler} maxHeight={maxHeight} ref={listRef}>
+                <ChecklistUl $isToggler={isToggler} $maxHeight={maxHeight} ref={listRef}>
                     {[...new Set(locations.map(location => location.state))].map(state => {
                         return (
                             <li key={state}><input

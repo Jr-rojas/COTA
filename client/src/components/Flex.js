@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const FlexCenter = styled.div`
     display:flex;
-    flex-direction:${props => (props.flexDirection ? props.flexDirection : "")};
+    flex-direction:${props => (props.$flexDirection ? props.$flexDirection : "")};
     text-align: center;
     align-items:center;
-    justify-content: ${props => (props.justifyContent ? props.justifyContent : "center")};
+    justify-content: ${props => (props.$justifyContent ? props.$justifyContent : "center")};
     gap:${props => (props.gap ? props.gap : "")};
-    flex-wrap:${props => (props.flexWrap ? props.flexWrap : "nowrap")};
-    max-width:${props => (props.maxWidth ? props.maxWidth : "")};
+    flex-wrap:${props => (props.$flexWrap ? props.$flexWrap : "nowrap")};
+    max-width:${props => (props.$maxWidth ? props.$maxWidth : "")};
 `
 
 export const FlexColumn = styled.div`

@@ -27,7 +27,7 @@ export const ChecklistLabel = styled.label`
 
 export const ChecklistUl = styled.ul`
     list-style-type: none;
-    display: ${({ isToggler }) => (isToggler ? "block" : "none")};
+    display: ${({ $isToggler }) => ($isToggler ? "block" : "none")};
     padding: 10px;
     margin: 0 10px ;
     background-color:white;
@@ -35,7 +35,7 @@ export const ChecklistUl = styled.ul`
     z-index: 1 ;
     position: absolute;
     top:70%;
-    max-height: ${({ maxHeight }) => maxHeight}px;
+    max-height: ${({ $maxHeight }) => $maxHeight}px;
     transition: max-height 0.3s ease-in-out;
     overflow: hidden;
     border: solid 1px grey;

@@ -53,7 +53,7 @@ const EventsList = () => {
         <>
             <DropdownChecklist>
                 <ChecklistLabel><span>Location: </span><FontAwesomeIcon onClick={toggleButton} icon={isToggler? faSquareCaretUp : faSquareCaretDown} size="lg"/></ChecklistLabel>
-                <ChecklistUl isToggler={isToggler} maxHeight={maxHeight} ref={listRef}>
+                <ChecklistUl $isToggler={isToggler} $maxHeight={maxHeight} ref={listRef}>
                     {[...new Set(allEvents.map(event => event.location))].map(location => {
                     return (
                         <li key={location}><input 

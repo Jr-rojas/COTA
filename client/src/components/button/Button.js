@@ -11,7 +11,7 @@ export default function Button({title, type, link, onClick, bgColor, hoverColor,
         if (disabled) {
             e.preventDefault();
         } else {
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'auto' });
 
             if (onClick) {
                 onClick(e);

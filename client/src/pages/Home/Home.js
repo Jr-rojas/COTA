@@ -75,9 +75,10 @@ export default function Home() {
                             </div>
                             <hr className={fanStyles.hr} />
                             <p className={styles.p}>
-                                Fuimos desafiados a ensanchar nuestra visión y prepararnos para lo que Dios quiere hacer en nosotros y a través de nosotros. Creemos que Dios nos llama a crecer, a expandirnos y a impactar generaciones. ¡Es tiempo de avanzar con fe y conquistar las promesas de Dios! <br /><br />
-                                <p>📺 Revive este poderoso evento en Facebook y sé parte de lo que Dios está haciendo.</p>
+                                Fuimos desafiados a ensanchar nuestra visión y prepararnos para lo que Dios quiere hacer en nosotros y a través de nosotros. Creemos que Dios nos llama a crecer, a expandirnos y a impactar generaciones. ¡Es tiempo de avanzar con fe y conquistar las promesas de Dios!
                             </p>
+                            <p>📺 Revive este poderoso evento en Facebook y sé parte de lo que Dios está haciendo.</p>
+                           
                             <Button
                                 title="watch"
                                 type="external"

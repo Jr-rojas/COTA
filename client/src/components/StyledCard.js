@@ -38,8 +38,8 @@ export const StyledCard = ({children, title, description}) => {
         <Card>
             {children}
             <div>
-                <Title isAddress={isAddressCard}>{title}</Title>
-                <Description isAddress={isAddressCard}>
+                <Title $isAddress={isAddressCard}>{title}</Title>
+                <Description $isAddress={isAddressCard}>
                     {isAddressCard ? (
                         <>
                             <strong>Church of the Americas</strong>

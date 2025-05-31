@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <div className="bg-white">
-            <div class="container-xl">
+            <div className="container-xl">
                 <nav className={`nav ${isToggler ? 'active' : ''}`}>
                     <Link to="/" className="site-title">
                         <img src="/cota-logo.png" alt="COTA logo" width="50" height="50" />

@@ -67,7 +67,7 @@ export const ChurchDetails = () => {
             )}
 
             <section style={{ backgroundColor: "#f8f7f4", padding: "30px 10px" }}>
-                <FlexCenter maxWidth={"1200px"} justifyContent={"space-around"} flexWrap={"wrap"} style={{ margin: "auto" }}>
+                <FlexCenter $maxWidth={"1200px"} $justifyContent={"space-around"} $flexWrap={"wrap"} style={{ margin: "auto" }}>
                     <div className={styles.wrapper}>
                         <div>
                             <h2>Service Times</h2>

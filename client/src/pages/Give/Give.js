@@ -18,7 +18,7 @@ export default function Give() {
         <>
            
             <section className='bg-light'>
-                <FlexCenter flexDirection="column">
+                <FlexCenter $flexDirection="column">
                     <Container>
                         <h1 className='mb-3'>Por qué sembramos</h1>
                         <p>En Church of the Americas, creemos en el poder de la siembra y en la importancia de dar con un corazón generoso. <strong><em>No podemos cosechar lo que no hemos sembrado; si no te gusta tu cosecha, cambia tu siembra</em></strong>. Así como en la vida espiritual, en nuestra comunidad y servicio, todo lo que ofrecemos—tiempo, recursos, amor y compasión—es una semilla que Dios hace crecer. Al dar con fe y propósito, sembramos un futuro de bendición, no solo para nosotros, sino para quienes nos rodean.</p>

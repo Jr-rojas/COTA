@@ -1,28 +1,24 @@
 import useDocumentTitle from "../../hooks/useDocumentTitle";
-import styles from "./About.module.scss"
+import styles from "./About.module.scss";
 import { Link } from "react-router-dom";
+import scrollToTop from "../../utils/scrollToTop";
 
 
 export default function About() {
     useDocumentTitle("Sobre Nosotros - COTA")
 
-    const handleScrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'auto' });
-    }
-
-
     return (
         <>
-            <section className="bg-light text-center py-5 ">
-                <div className="container-xl my-2">
+            <section className="bg-light text-center pt-5 ">
+                <div className="container-xl pt-2">
                     <h1 className="transformTextN lh-sm">Church of the Americas <span className="text-danger">levantando una generacion para Dios.</span></h1>
                     <div className="container-lg">
-                        <p className="mt-4">Con bases sólidas en Su Palabra, seguimos el llamado de expandir Su reino, guiados por una comunidad de pastores y líderes comprometidos con la fe, la misión y el crecimiento espiritual.</p>
+                        <p className="mt-4 mb-0">Con bases sólidas en Su Palabra, seguimos el llamado de expandir Su reino, guiados por una comunidad de pastores y líderes comprometidos con la fe, la misión y el crecimiento espiritual.</p>
                     </div>
                 </div>
             </section>
             <div className="wave-container"></div>
-            <section className="bg-dark py-3 text-light">
+            <section className="bg-dark pt-3 text-light">
                 <div className="container-xl">
                     <h4>Conoce a nuestro Apóstol</h4>
                     <h2 className="lh-sm">Pastores Erasmo y Elvia Solis</h2>
@@ -56,7 +52,7 @@ export default function About() {
                 <div className="container-xl my-5 text-center">
                     <h2 className="mb-4">Conose Mas</h2>
                     <div className="row justify-content-around p-3 gy-3">
-                        <Link to="/about/pastores" onClick={handleScrollToTop} className="col-md-3">
+                        <Link to="/about/pastores" onClick={scrollToTop} className="col-md-3">
                             <div className="card px-0 text-light hover-shadow h-100">
                                 <img src="/shared/images/pastors/PastorErasmo.jpg" className="card-img" alt="..."/>
                                 <div className="card-img-overlay d-flex align-items-end justify-content-center">
@@ -64,7 +60,7 @@ export default function About() {
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/about/lema" onClick={handleScrollToTop} className="col-md-3">
+                        <Link to="/about/lema" onClick={scrollToTop} className="col-md-3">
                             <div className="card px-0 text-light hover-shadow h-100">
                                 <img src="/cota-logo.png" className="card-img" alt="..."/>
                                 <div className="card-img-overlay d-flex align-items-end justify-content-center">
@@ -72,7 +68,7 @@ export default function About() {
                                 </div>
                             </div>
                         </Link>
-                        <Link to="/about/credo" onClick={handleScrollToTop} className="col-md-3">
+                        <Link to="/about/credo" onClick={scrollToTop} className="col-md-3">
                             <div className="card px-0 text-light hover-shadow h-100">
                                 <img src="/shared/images/leadPastor.jpg" className="card-img" alt="..."/>
                                 <div className="card-img-overlay d-flex align-items-end justify-content-center">

@@ -35,7 +35,7 @@ export default function Watch() {
                     <div className={styles.grid}>
                         <div style={{ maxWidth: "600px" }}>
                             <div className="videoContainer">
-                                <iframe id="youtube-video" src="https://www.youtube.com/embed/xfPg033NZyg?si=gfx2WdGGNSENuauH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe id="youtube-video" src="https://www.youtube.com/embed/xfPg033NZyg?si=gfx2WdGGNSENuauH" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                             </div>
                         </div>
                         <div>
