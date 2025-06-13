@@ -1,6 +1,6 @@
 //import eventImg from "../img/youth_camp_1.png"
 
-export const EVENTS = [
+const EVENTS = [
    {
       id: 0,
       date: "July 25, 2025",
@@ -35,3 +35,5 @@ export const EVENTS = [
       description: "Consectetur adipiscing elit. Dapibus neque. Nam sagittis tellus non nunc faucibus, a fermentum urna elementum."
     } */
 ];
+
+export default EVENTS;

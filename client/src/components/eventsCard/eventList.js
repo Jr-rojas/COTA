@@ -1,20 +1,33 @@
 import { useState, useRef, useEffect } from "react";
-
+import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCaretDown, faSquareCaretUp } from '@fortawesome/free-solid-svg-icons';
 
-import { selectAllEvents } from "./eventsSlice";
+import config from "../../config";
+//import { selectAllEvents } from "./eventsSlice";
 import EventCard from "./EventCard";
 import { GridLayout } from "../GridLayout";
 import { DropdownChecklist, ChecklistLabel, ChecklistUl} from "../DropdownChecklist";
 
 
 const EventsList = () => {
-    const allEvents = selectAllEvents();
+    const [allEvents, setAllEvents] = useState([])
 
     const [isToggler, setToggler] = useState(false)
     const [maxHeight, setMaxHeight] = useState(0);
     const listRef = useRef(null);
+
+    useEffect(() => {
+        if(config.USE_BACKEND){
+            axios.get('/api/events')
+            .then(res => setAllEvents(res.data))
+            .catch(err => console.log("Error fetching events:", err))
+        }else{
+            import ('../../app/shared/data/EVENTS')
+            .then(module => setAllEvents(module.default))
+            .catch(err => console.log("Error loading dummy events:", err))
+        }
+    },[])
 
     useEffect(() => {
         if (listRef.current) {

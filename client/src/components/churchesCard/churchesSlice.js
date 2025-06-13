@@ -1,4 +1,4 @@
-import { CHURCHES } from "../../app/shared/data/CHURCHES"
+import CHURCHES from "../../app/shared/data/CHURCHES"
 
 export const selectAllChurches = () => {
     return CHURCHES;

@@ -1,5 +1,5 @@
 
-export const CHURCHES = [
+const CHURCHES = [
     {
       id: 0,
       churchName: "COTA-Los-Angeles",
@@ -319,3 +319,5 @@ export const CHURCHES = [
         ]
       }
 ];
+
+export default CHURCHES

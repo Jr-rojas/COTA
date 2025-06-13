@@ -1,4 +1,4 @@
-export const STAFF = [
+const STAFF = [
     {
         id: 0,
         name: "Erasmo y Elvira Solis",
@@ -151,4 +151,6 @@ export const STAFF = [
         description: "Sirviendo en la iglesia con una pasión por el crecimiento espiritual y la comunidad.",
         image: "/shared/images/pastors/PastorFidelJr2.jpg"
     }
-]
+];
+
+export default STAFF;

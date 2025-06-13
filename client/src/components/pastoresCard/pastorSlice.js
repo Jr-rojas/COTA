@@ -1,4 +1,4 @@
-import { STAFF } from "../../app/shared/data/STAFF"
+import STAFF from "../../app/shared/data/STAFF"
 
 export const selectAllStaff = () => {
     return STAFF;

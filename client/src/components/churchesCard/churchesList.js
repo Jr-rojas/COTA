@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect } from "react";
-
+import axios from "axios";
+import config from "../../config";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCaretDown, faSquareCaretUp, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
-import { selectAllChurches } from "./churchesSlice";
+//import { selectAllChurches } from "./churchesSlice";
 import ChurchLocationCard from "./ChurchLocationCard";
 import { DropdownChecklist, ChecklistLabel, ChecklistUl } from "../DropdownChecklist";
 
@@ -11,11 +12,23 @@ import visitStyles from "../../pages/Visit/Visit.module.css"
 
 
 const ChurchLocationList = () => {
-    const locations = selectAllChurches();
+    const [allChurches, setAllChurches] = useState([])
 
     const [isToggler, setToggler] = useState(false)
     const [maxHeight, setMaxHeight] = useState(0);
     const listRef = useRef(null);
+
+    useEffect(() => {
+        if(config.USE_BACKEND){
+            axios.get("/api/churches")
+            .then(res => setAllChurches(res.data))
+            .catch(err => console.log("Error fetching CHURCHES:",err))
+        }else{
+            import("../../app/shared/data/CHURCHES")
+            .then(module => setAllChurches(module.default))
+            .catch(err => console.log("Error loading Dummy CHURCHES:",err))
+        }
+    }, [])
 
     useEffect(() => {
         if (listRef.current) {
@@ -44,14 +57,14 @@ const ChurchLocationList = () => {
         setSelectedStates(selectedStates.filter(st => st !== stateToRemove));
     };
 
-    const filterStates = selectedStates.length === 0 ? locations : locations.filter(location => selectedStates.includes(location.state))
+    const filterStates = selectedStates.length === 0 ? allChurches : allChurches.filter(location => selectedStates.includes(location.state))
 
     return (
         <>
             <DropdownChecklist>
                 <ChecklistLabel><span>Estado: </span><FontAwesomeIcon onClick={toggleButton} icon={isToggler ? faSquareCaretUp : faSquareCaretDown} size="lg" /></ChecklistLabel>
                 <ChecklistUl $isToggler={isToggler} $maxHeight={maxHeight} ref={listRef}>
-                    {[...new Set(locations.map(location => location.state))].map(state => {
+                    {[...new Set(allChurches.map(location => location.state))].map(state => {
                         return (
                             <li key={state}><input
                                 type="checkbox"
